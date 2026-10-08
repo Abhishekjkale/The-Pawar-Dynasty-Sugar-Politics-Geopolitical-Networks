@@ -1,0 +1,2198 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Pawar Dynasty: Sugar Politics, Global Corporate Leverage, and Geopolitical Networks</title>
+    <meta name="description" content="An investigative portfolio case study analyzing sugar cooperatives, global corporate leverage, educational trusts, and geopolitical networks in Maharashtra." />
+    <meta property="og:title" content="The Pawar Dynasty: Sugar Politics & Geopolitical Networks" />
+    <meta property="og:description" content="An investigative portfolio case study analyzing sugar cooperatives, global corporate leverage, educational trusts, and geopolitical networks in Maharashtra." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Newsreader', 'Georgia', 'serif'],
+              display: ['Cinzel', 'serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              dynasty: {
+                950: '#060911',
+                900: '#0b1120',
+                850: '#0f172a',
+                800: '#17223b',
+                700: '#233252',
+                border: '#1e293b',
+                emerald: '#10b981',
+                emeraldGlow: '#059669',
+                gold: '#d97706',
+                amber: '#f59e0b',
+                cyan: '#06b6d4',
+                purple: '#8b5cf6',
+                rose: '#f43f5e'
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Vis.js Network CDN -->
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+    <!-- Reveal.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="reveal-theme" />
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+
+    <style>
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b1120;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+
+      /* Academic Whitepaper typography enhancements */
+      .prose-academic p {
+        font-family: 'Newsreader', Georgia, serif;
+        font-size: 1.15rem;
+        line-height: 1.85;
+        color: #cbd5e1;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+      }
+      .prose-academic h2 {
+        font-family: 'Cinzel', serif;
+        letter-spacing: -0.02em;
+      }
+      .prose-academic h3 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      /* Reveal.js embedded container styles */
+      #reveal-deck-container .reveal {
+        height: 640px !important;
+        background: #090e17;
+        color: #f1f5f9;
+        font-family: 'Inter', sans-serif;
+      }
+      #reveal-deck-container .reveal .slides section {
+        text-align: left;
+        padding: 30px;
+      }
+      #reveal-deck-container .reveal h1,
+      #reveal-deck-container .reveal h2,
+      #reveal-deck-container .reveal h3 {
+        color: #f8fafc;
+        text-transform: none;
+        font-family: 'Cinzel', serif;
+      }
+      #reveal-deck-container .reveal .progress {
+        color: #10b981;
+      }
+      #reveal-deck-container .reveal .controls {
+        color: #10b981;
+      }
+
+      /* Glow & Glass effects */
+      .glass-panel {
+        background: rgba(15, 23, 42, 0.75);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(30, 41, 59, 0.8);
+      }
+      .glass-card-hover {
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .glass-card-hover:hover {
+        border-color: rgba(16, 185, 129, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 30px -10px rgba(16, 185, 129, 0.15);
+      }
+
+      /* Pulse indicator */
+      @keyframes radar-pulse {
+        0% { transform: scale(0.95); opacity: 0.8; }
+        50% { transform: scale(1.05); opacity: 0.4; }
+        100% { transform: scale(0.95); opacity: 0.8; }
+      }
+      .radar-active {
+        animation: radar-pulse 3s infinite ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="bg-dynasty-950 text-slate-200 min-h-screen font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+    <!-- Top Classification & Metadata Banner -->
+    <header class="border-b border-dynasty-border bg-dynasty-900/90 sticky top-0 z-50 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Title Branding -->
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500/20 via-amber-500/20 to-indigo-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 font-bold text-lg shadow-inner">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-semibold bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60">
+                  SPECIAL INVESTIGATION
+                </span>
+                <span class="text-xs text-slate-400 hidden sm:inline-block font-mono">
+                  REF: MH-AGRO-CORP-GEO-2026
+                </span>
+              </div>
+              <h1 class="text-sm sm:text-base font-bold text-slate-100 tracking-tight font-display truncate">
+                The Pawar Dynasty: <span class="text-slate-400 font-sans font-normal text-xs sm:text-sm">Sugar Politics & Global Corporate Leverage</span>
+              </h1>
+            </div>
+          </div>
+
+          <!-- Navigation Switcher -->
+          <nav class="hidden md:flex items-center space-x-1 bg-dynasty-950/80 p-1 rounded-xl border border-dynasty-border" id="nav-tabs">
+            <button onclick="switchTab('dashboard')" id="tab-btn-dashboard" class="nav-tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium text-emerald-400 bg-slate-800/90 border border-emerald-500/30 transition-all flex items-center space-x-2">
+              <i class="fa-solid fa-chart-line text-emerald-400"></i>
+              <span>Dashboard & AI</span>
+            </button>
+            <button onclick="switchTab('mindmap')" id="tab-btn-mindmap" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition-all flex items-center space-x-2">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>AI Mind Map</span>
+            </button>
+            <button onclick="switchTab('whitepaper')" id="tab-btn-whitepaper" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition-all flex items-center space-x-2">
+              <i class="fa-solid fa-file-contract"></i>
+              <span>Whitepaper</span>
+            </button>
+            <button onclick="switchTab('slides')" id="tab-btn-slides" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition-all flex items-center space-x-2">
+              <i class="fa-solid fa-presentation-screen"></i>
+              <span>Presentation Deck</span>
+            </button>
+          </nav>
+
+          <!-- Right Controls / Audio Briefing & Print -->
+          <div class="flex items-center space-x-2">
+            <button onclick="toggleAudioBriefing()" id="audio-brief-btn" class="px-3 py-1.5 rounded-lg bg-emerald-950/50 border border-emerald-600/40 text-emerald-400 hover:bg-emerald-900/60 text-xs font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-volume-high text-emerald-400" id="audio-icon"></i>
+              <span id="audio-label" class="hidden lg:inline">Audio Brief</span>
+            </button>
+            <button onclick="window.print()" class="p-2 rounded-lg bg-dynasty-850 border border-dynasty-border text-slate-400 hover:text-slate-200 text-xs transition" title="Print / Export Dossier">
+              <i class="fa-solid fa-print"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Nav Tabs -->
+        <div class="flex md:hidden overflow-x-auto py-2 space-x-2 border-t border-slate-800/60 scrollbar-none" id="mobile-nav-tabs">
+          <button onclick="switchTab('dashboard')" id="mob-tab-btn-dashboard" class="whitespace-nowrap px-3 py-1 text-xs font-medium rounded-lg text-emerald-400 bg-slate-800/90 border border-emerald-500/30">
+            <i class="fa-solid fa-chart-line mr-1"></i> Dashboard
+          </button>
+          <button onclick="switchTab('mindmap')" id="mob-tab-btn-mindmap" class="whitespace-nowrap px-3 py-1 text-xs font-medium rounded-lg text-slate-400 hover:bg-slate-800/50">
+            <i class="fa-solid fa-diagram-project mr-1"></i> Mind Map
+          </button>
+          <button onclick="switchTab('whitepaper')" id="mob-tab-btn-whitepaper" class="whitespace-nowrap px-3 py-1 text-xs font-medium rounded-lg text-slate-400 hover:bg-slate-800/50">
+            <i class="fa-solid fa-file-contract mr-1"></i> Whitepaper
+          </button>
+          <button onclick="switchTab('slides')" id="mob-tab-btn-slides" class="whitespace-nowrap px-3 py-1 text-xs font-medium rounded-lg text-slate-400 hover:bg-slate-800/50">
+            <i class="fa-solid fa-presentation-screen mr-1"></i> Slide Deck
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Simulated Intelligence Audio Player Drawer (Expandable) -->
+    <div id="audio-drawer" class="hidden border-b border-emerald-900/50 bg-emerald-950/30 px-4 py-2.5 transition-all">
+      <div class="max-w-7xl mx-auto flex items-center justify-between text-xs">
+        <div class="flex items-center space-x-3">
+          <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></div>
+          <span class="text-slate-300 font-mono"><strong class="text-emerald-400 font-semibold">SYNTHETIC INTELLIGENCE DISPATCH:</strong> "Deconstructing the Pawar Geo-Economic Leverage Matrix"</span>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span id="audio-time" class="text-slate-400 font-mono text-[11px]">01:42 / 04:15</span>
+          <button onclick="toggleAudioBriefing()" class="text-slate-400 hover:text-slate-200">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN VIEW CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+      <!-- ========================================================================= -->
+      <!-- VIEW 1: EXECUTIVE DASHBOARD & AI SUMMARY -->
+      <!-- ========================================================================= -->
+      <section id="view-dashboard" class="space-y-8 animate-fadeIn">
+        
+        <!-- Hero Header -->
+        <div class="relative rounded-2xl border border-dynasty-border bg-gradient-to-br from-dynasty-900 via-dynasty-850 to-dynasty-950 p-6 sm:p-8 overflow-hidden shadow-2xl">
+          <div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-16 -bottom-16 w-80 h-80 rounded-full bg-amber-500/10 blur-3xl pointer-events-none"></div>
+
+          <div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div class="max-w-3xl space-y-3">
+              <div class="flex flex-wrap items-center gap-2 text-xs font-mono text-emerald-400">
+                <span class="px-2.5 py-1 rounded-md bg-emerald-950 border border-emerald-700/50">
+                  <i class="fa-solid fa-shield-halved mr-1"></i> GEOPOLITICAL CASE STUDY
+                </span>
+                <span class="text-slate-400">•</span>
+                <span class="text-slate-400">MAHARASHTRA STATE ARCHITECTURE (1967–2026)</span>
+                <span class="text-slate-400">•</span>
+                <span class="text-amber-400 font-semibold">BARAMATI COOPERATIVE TO US CORRIDOR</span>
+              </div>
+              <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight font-display">
+                The Pawar Dynasty: <span class="bg-gradient-to-r from-emerald-400 via-amber-300 to-indigo-300 bg-clip-text text-transparent">Power, Sugar & Global Leverage</span>
+              </h2>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
+                A forensic investigation into how Western Maharashtra’s agrarian cooperative apparatus was converted into multi-generational political liquidity, providing the bargaining chip for transnational corporate arbitrage (Hardcastle/McDonald’s & Adani Group), elite educational institutional capture, and decisive US diplomatic interlocution.
+              </p>
+            </div>
+
+            <!-- Quick Action Hub -->
+            <div class="flex flex-col sm:flex-row lg:flex-col gap-2.5 min-w-[200px]">
+              <button onclick="switchTab('mindmap')" class="w-full px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-semibold text-xs transition flex items-center justify-center space-x-2 shadow-lg shadow-emerald-900/30">
+                <i class="fa-solid fa-project-diagram"></i>
+                <span>Explore Live Mind Map</span>
+              </button>
+              <button onclick="switchTab('whitepaper')" class="w-full px-4 py-2.5 rounded-xl bg-dynasty-800 hover:bg-dynasty-700 text-slate-200 border border-dynasty-border font-medium text-xs transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Read Full Whitepaper</span>
+              </button>
+              <button onclick="switchTab('slides')" class="w-full px-4 py-2.5 rounded-xl bg-dynasty-950 hover:bg-dynasty-900 text-slate-300 border border-slate-800 font-medium text-xs transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-play"></i>
+                <span>Executive Slide Deck</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Four Core Interactive KPI Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- KPI 1 -->
+          <div class="glass-panel p-5 rounded-xl glass-card-hover border-emerald-900/40 relative group cursor-pointer" onclick="showMetricDetail('sugar')">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-semibold">Agrarian Base</span>
+              <div class="w-8 h-8 rounded-lg bg-emerald-950/80 border border-emerald-800/60 flex items-center justify-center text-emerald-400">
+                <i class="fa-solid fa-wheat-awn"></i>
+              </div>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">195+ Mills</div>
+            <div class="text-xs text-slate-300 font-medium mt-1">Sugar Cooperatives & DCCBs</div>
+            <div class="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+              <span>Vote-Bank Monolith</span>
+              <span class="text-emerald-400 font-mono font-semibold">₹42,000 Cr+ Liquidity</span>
+            </div>
+          </div>
+
+          <!-- KPI 2 -->
+          <div class="glass-panel p-5 rounded-xl glass-card-hover border-amber-900/40 relative group cursor-pointer" onclick="showMetricDetail('corporate')">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-semibold">Corporate Nexus</span>
+              <div class="w-8 h-8 rounded-lg bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">$18.5B+</div>
+            <div class="text-xs text-slate-300 font-medium mt-1">Aligned Infrastructure Assets</div>
+            <div class="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+              <span>McDonald's & Adani</span>
+              <span class="text-amber-400 font-mono font-semibold">Dighi Port & Supply</span>
+            </div>
+          </div>
+
+          <!-- KPI 3 -->
+          <div class="glass-panel p-5 rounded-xl glass-card-hover border-indigo-900/40 relative group cursor-pointer" onclick="showMetricDetail('geopolitical')">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono uppercase tracking-wider text-indigo-400 font-semibold">Geopolitical Reach</span>
+              <div class="w-8 h-8 rounded-lg bg-indigo-950/80 border border-indigo-800/60 flex items-center justify-center text-indigo-400">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">4 Decades</div>
+            <div class="text-xs text-slate-300 font-medium mt-1">Federal & WTO Interlocutor</div>
+            <div class="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+              <span>Defense & Agriculture</span>
+              <span class="text-indigo-400 font-mono font-semibold">US Bilateral Corridor</span>
+            </div>
+          </div>
+
+          <!-- KPI 4 -->
+          <div class="glass-panel p-5 rounded-xl glass-card-hover border-rose-900/40 relative group cursor-pointer" onclick="showMetricDetail('education')">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono uppercase tracking-wider text-rose-400 font-semibold">Elite Soft Power</span>
+              <div class="w-8 h-8 rounded-lg bg-rose-950/80 border border-rose-800/60 flex items-center justify-center text-rose-400">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-mono">140,000+</div>
+            <div class="text-xs text-slate-300 font-medium mt-1">Students in Trust Networks</div>
+            <div class="mt-3 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+              <span>Pawar Public & Vidya P.</span>
+              <span class="text-rose-400 font-mono font-semibold">Bureaucratic Capture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic AI Strategic Intelligence Synthesis Box -->
+        <div class="glass-panel rounded-2xl border border-dynasty-border overflow-hidden">
+          <div class="bg-gradient-to-r from-dynasty-900 to-dynasty-850 p-5 border-b border-dynasty-border flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-white flex items-center gap-2">
+                  <span>AI Strategic Intelligence Dossier</span>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-950 border border-emerald-700/50 text-emerald-400 uppercase font-semibold">
+                    SYNTHESIZED FINDINGS
+                  </span>
+                </h3>
+                <p class="text-xs text-slate-400">Algorithmic deconstruction of dynastic resilience, capital aggregation, and international leverage</p>
+              </div>
+            </div>
+
+            <!-- Filter Pills -->
+            <div class="flex items-center space-x-1.5 overflow-x-auto text-xs" id="ai-pills">
+              <button onclick="filterAiSummary('all')" class="ai-pill px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-medium text-xs">All Vectors</button>
+              <button onclick="filterAiSummary('sugar')" class="ai-pill px-3 py-1 rounded-lg bg-dynasty-800 text-slate-400 hover:text-slate-200 border border-dynasty-border text-xs">Sugar Monolith</button>
+              <button onclick="filterAiSummary('corporate')" class="ai-pill px-3 py-1 rounded-lg bg-dynasty-800 text-slate-400 hover:text-slate-200 border border-dynasty-border text-xs">MNC/Adani Nexus</button>
+              <button onclick="filterAiSummary('geopolitics')" class="ai-pill px-3 py-1 rounded-lg bg-dynasty-800 text-slate-400 hover:text-slate-200 border border-dynasty-border text-xs">US Leverage</button>
+              <button onclick="filterAiSummary('education')" class="ai-pill px-3 py-1 rounded-lg bg-dynasty-800 text-slate-400 hover:text-slate-200 border border-dynasty-border text-xs">Elite Capture</button>
+            </div>
+          </div>
+
+          <!-- Accordion Items -->
+          <div class="divide-y divide-dynasty-border/80 p-4 sm:p-6 space-y-3" id="ai-accordion-container">
+
+            <!-- Accordion 1: Sugar Flywheel -->
+            <div class="accordion-item rounded-xl bg-dynasty-900/60 border border-dynasty-border overflow-hidden" data-category="sugar">
+              <button onclick="toggleAccordion(1)" class="w-full p-4 text-left flex items-center justify-between hover:bg-slate-800/40 transition">
+                <div class="flex items-center space-x-3">
+                  <span class="w-7 h-7 rounded-lg bg-emerald-950 border border-emerald-800/80 flex items-center justify-center text-emerald-400 text-xs font-mono font-bold">01</span>
+                  <div>
+                    <h4 class="text-sm font-semibold text-slate-100">The Agrarian Liquidity Engine: Sugar Cooperatives & Perpetual Vote Banks</h4>
+                    <span class="text-xs text-emerald-400 font-mono">Western Maharashtra Cooperative Arc (Baramati, Pune, Kolhapur, Sangli)</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300" id="accordion-icon-1"></i>
+              </button>
+              <div class="accordion-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-dynasty-border/40 pt-4" id="accordion-content-1">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-3">
+                  <div class="p-3 rounded-lg bg-dynasty-950 border border-slate-800">
+                    <div class="text-xs font-mono text-emerald-400 uppercase font-semibold">Institutional Control</div>
+                    <div class="text-sm font-bold text-white mt-1">Maharashtra State Co-op Bank (MSCB)</div>
+                    <p class="text-xs text-slate-400 mt-1">Channeling state credit, loan guarantees, and crushing season advances through politically loyal mill chairmen.</p>
+                  </div>
+                  <div class="p-3 rounded-lg bg-dynasty-950 border border-slate-800">
+                    <div class="text-xs font-mono text-amber-400 uppercase font-semibold">Cane Price Arbitration</div>
+                    <div class="text-sm font-bold text-white mt-1">FRP Fixation & Withholding</div>
+                    <p class="text-xs text-slate-400 mt-1">Deliberate staggered settlement of Fair and Remunerative Price (FRP) ensures smallholder agrarian dependence during assembly elections.</p>
+                  </div>
+                  <div class="p-3 rounded-lg bg-dynasty-950 border border-slate-800">
+                    <div class="text-xs font-mono text-indigo-400 uppercase font-semibold">Water & Irrigation Monopolies</div>
+                    <div class="text-sm font-bold text-white mt-1">Nira-Deoghar & Krishna Basins</div>
+                    <p class="text-xs text-slate-400 mt-1">Water distribution rights from state irrigation dams disproportionately diverted to cooperative sugarcane cultivation tracts.</p>
+                  </div>
+                </div>
+                <p>
+                  Sugar in Maharashtra is not merely an agricultural commodity; it is a financial instrument and political voting syndicate. By controlling the cooperative sugar factories, the dynasty controls local credit via District Central Co-op Banks (DCCBs), tractor finance, irrigation lift schemes, and fuel outlets. The sugarcane cultivator is bound structurally: the mill is the sole buyer, the co-op bank holds their debt, and the political leadership determines the payment schedule. This triangular matrix generated an invincible rural base that insulated the family against New Delhi's federal pressures.
+                </p>
+              </div>
+            </div>
+
+            <!-- Accordion 2: Corporate Nexus -->
+            <div class="accordion-item rounded-xl bg-dynasty-900/60 border border-dynasty-border overflow-hidden" data-category="corporate">
+              <button onclick="toggleAccordion(2)" class="w-full p-4 text-left flex items-center justify-between hover:bg-slate-800/40 transition">
+                <div class="flex items-center space-x-3">
+                  <span class="w-7 h-7 rounded-lg bg-amber-950 border border-amber-800/80 flex items-center justify-center text-amber-400 text-xs font-mono font-bold">02</span>
+                  <div>
+                    <h4 class="text-sm font-semibold text-slate-100">The Corporate Nexus: McDonald’s (Hardcastle) & The Adani Infrastructural Axis</h4>
+                    <span class="text-xs text-amber-400 font-mono">MNC Sourcing Corridors, Dighi Port & Energy Grid Arbitrage</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300" id="accordion-icon-2"></i>
+              </button>
+              <div class="accordion-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-dynasty-border/40 pt-4 hidden" id="accordion-content-2">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
+                  <div class="p-3.5 rounded-lg bg-dynasty-950 border border-slate-800 space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-mono font-bold text-amber-400">CASE A: McDONALD'S INDIA (WESTLIFE / HARDCASTLE)</span>
+                      <span class="text-[10px] bg-amber-950 text-amber-300 px-1.5 py-0.5 rounded border border-amber-850">Cold Chain Hubs</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      When McDonald’s entered India, Maharashtra was designated as the primary agricultural and logistical backbone. Through Amit Jatia’s Hardcastle Restaurants (Westlife Foodworld), strategic linkages were forged with Baramati Agro and Western Maharashtra cold storage networks for dairy, iceberg lettuce, poultry, and buns. The dynasty facilitated prime commercial urban zoning approvals across Mumbai and Pune in exchange for deep agrarian supply contract integration.
+                    </p>
+                  </div>
+                  <div class="p-3.5 rounded-lg bg-dynasty-950 border border-slate-800 space-y-1.5">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-mono font-bold text-cyan-400">CASE B: THE ADANI INFRASTRUCTURE ENTENTE</span>
+                      <span class="text-[10px] bg-cyan-950 text-cyan-300 px-1.5 py-0.5 rounded border border-cyan-850">Ports & HVDC Lines</span>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      While federal opposition attacked the Adani Group over the 2023 Hindenburg revelations, Sharad Pawar publicly defended Gautam Adani, noting his critical role in Indian infrastructure. The tangible alliance spans Adani Ports’ takeover and expansion of Dighi Port in Raigad, high-voltage transmission lines through Western Maharashtra, and the Baramati-Mundra industrial logistics corridor, preserving bilateral corporate immunity regardless of regime change in New Delhi.
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  The strategic genius was converting rural agrarian leverage into corporate entry visas. Transnational corporations and national conglomerates requiring land, environmental clearances, and uninterrupted logistical corridors in Maharashtra discovered that the Pawar family was the ultimate sovereign guarantor of corporate operational stability.
+                </p>
+              </div>
+            </div>
+
+            <!-- Accordion 3: Geopolitical Leverage -->
+            <div class="accordion-item rounded-xl bg-dynasty-900/60 border border-dynasty-border overflow-hidden" data-category="geopolitics">
+              <button onclick="toggleAccordion(3)" class="w-full p-4 text-left flex items-center justify-between hover:bg-slate-800/40 transition">
+                <div class="flex items-center space-x-3">
+                  <span class="w-7 h-7 rounded-lg bg-indigo-950 border border-indigo-800/80 flex items-center justify-center text-indigo-400 text-xs font-mono font-bold">03</span>
+                  <div>
+                    <h4 class="text-sm font-semibold text-slate-100">The US Geopolitical Leverage: Track-II Diplomacy & India’s Financial Engine</h4>
+                    <span class="text-xs text-indigo-400 font-mono">WTO Agricultural Ministerial, Enron/Dabhol Mediation & Defense Postures</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300" id="accordion-icon-3"></i>
+              </button>
+              <div class="accordion-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-dynasty-border/40 pt-4 hidden" id="accordion-content-3">
+                <p class="mb-3">
+                  Maharashtra represents roughly 14% of India’s GDP and accounts for over 30% of its total foreign direct investment (FDI) inflows. Control over the state apparatus and Mumbai’s financial apparatus elevated the dynasty from a regional family into a sovereign-level diplomatic interlocutor for Western powers:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-3 text-xs">
+                  <div class="p-3 bg-dynasty-950 rounded-lg border border-slate-800">
+                    <strong class="text-indigo-400 block mb-1">WTO Ministerial Arbitrage</strong>
+                    As Union Agriculture Minister (2004–2014), Pawar held the veto pen on WTO Doha round agricultural tariffs, balancing domestic sugar farmer subsidies against US Trade Representative demands while protecting transnational food export quotas.
+                  </div>
+                  <div class="p-3 bg-dynasty-950 rounded-lg border border-slate-800">
+                    <strong class="text-indigo-400 block mb-1">Enron / Dabhol Power Legacy</strong>
+                    During the turbulent entry and collapse of US energy giant Enron in Dabhol, Pawar was the indispensable political broker between Washington, General Electric, Bechtel, and the Maharashtra State Electricity Board.
+                  </div>
+                  <div class="p-3 bg-dynasty-950 rounded-lg border border-slate-800">
+                    <strong class="text-indigo-400 block mb-1">Track-II Strategic Access</strong>
+                    Declassified diplomatic cables repeatedly identified Pawar as a pragmatic, pro-business interlocutor who could deliver consensus across fractious multi-party coalition governments when ideological New Delhi factions stalled.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion 4: Elite Capture -->
+            <div class="accordion-item rounded-xl bg-dynasty-900/60 border border-dynasty-border overflow-hidden" data-category="education">
+              <button onclick="toggleAccordion(4)" class="w-full p-4 text-left flex items-center justify-between hover:bg-slate-800/40 transition">
+                <div class="flex items-center space-x-3">
+                  <span class="w-7 h-7 rounded-lg bg-rose-950 border border-rose-800/80 flex items-center justify-center text-rose-400 text-xs font-mono font-bold">04</span>
+                  <div>
+                    <h4 class="text-sm font-semibold text-slate-100">Elite Network Capture: Pawar Public School, Vidya Pratishthan & Bureaucratic Dynasties</h4>
+                    <span class="text-xs text-rose-400 font-mono">Transition from Rustic Cooperative Trusts to High-Status Urban Institutional Enclaves</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-300" id="accordion-icon-4"></i>
+              </button>
+              <div class="accordion-content px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-dynasty-border/40 pt-4 hidden" id="accordion-content-4">
+                <p class="mb-3">
+                  Recognizing that rural cooperatives alone could not control India’s modern technocratic administrative state, the family executed a brilliant multi-decade transition into elite urban education:
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3 text-xs">
+                  <div class="p-3.5 bg-dynasty-950 rounded-lg border border-slate-800 space-y-1">
+                    <span class="text-rose-400 font-bold block">PAWAR PUBLIC CHARITABLE TRUST (PPCT)</span>
+                    <p class="text-slate-300">
+                      Strategically established high-demand ICSE/CBSE campuses in high-density urban power hubs: Kandivali and Bhandup (Mumbai), Amanora Park Town, Nanded City, and Hinjawadi (Pune). These schools enroll children of senior IAS officers, IPS commissioners, judicial officers, and multinational tech executives, cultivating lifetime social capital and informal bureaucratic loyalty.
+                    </p>
+                  </div>
+                  <div class="p-3.5 bg-dynasty-950 rounded-lg border border-slate-800 space-y-1">
+                    <span class="text-purple-400 font-bold block">VIDYA PRATISHTHAN & BARAMATI TECH OASIS</span>
+                    <p class="text-slate-300">
+                      Sprawling over hundreds of acres in Baramati, offering world-class Biotechnology, Law, and Engineering institutes. Visited regularly by foreign ambassadors, national corporate titans, and central ministers, Vidya Pratishthan serves as the intellectual showcase legitimizing dynastic wealth as visionary educational philanthropy.
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  This dual institutional architecture provides the ultimate hedge: while rural vernacular trusts (Rayat Shikshan Sanstha) guarantee mass grassroots mobilization, elite urban educational trusts institutionalize access to secretariats, regulatory bodies, and corporate boardrooms.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Four Structural Pillars Comparison Matrix -->
+        <div class="glass-panel rounded-2xl border border-dynasty-border p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-base font-bold text-white font-display">Structural Power Pillar Comparison</h3>
+              <p class="text-xs text-slate-400">Forensic breakdown of political function, cash flow velocity, and dynastic resilience</p>
+            </div>
+            <span class="text-xs font-mono text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded border border-emerald-800">
+              CROSS-SECTORAL SYNCHRONIZATION
+            </span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="border-b border-slate-800 text-slate-400 uppercase tracking-wider font-mono text-[11px] bg-dynasty-900/60">
+                  <th class="py-3 px-4">Power Pillar</th>
+                  <th class="py-3 px-4">Primary Entities</th>
+                  <th class="py-3 px-4">Economic Mechanism</th>
+                  <th class="py-3 px-4">Political Leverage</th>
+                  <th class="py-3 px-4">Vulnerability / Counter-Pillar</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-850 text-slate-300">
+                <tr class="hover:bg-dynasty-850/50 transition">
+                  <td class="py-3.5 px-4 font-bold text-emerald-400 flex items-center gap-2">
+                    <i class="fa-solid fa-wheat-awn"></i> 1. Sugar & Co-ops
+                  </td>
+                  <td class="py-3.5 px-4">Chatrapati Sahakari Sakhar Karkhana, Malegaon Mill, MSCB, Pune DCCB</td>
+                  <td class="py-3.5 px-4 font-mono">FRP Cane Price Withholding, Subsidized Credit, Ethanol Distilleries</td>
+                  <td class="py-3.5 px-4">Monolithic rural farmer voter turnout; absolute panchayat & zilla parishad hegemony</td>
+                  <td class="py-3.5 px-4 text-slate-400">Enforcement Directorate (ED) attachment of mills; private sugar mill deregulation</td>
+                </tr>
+                <tr class="hover:bg-dynasty-850/50 transition">
+                  <td class="py-3.5 px-4 font-bold text-amber-400 flex items-center gap-2">
+                    <i class="fa-solid fa-industry"></i> 2. Corporate Nexus
+                  </td>
+                  <td class="py-3.5 px-4">Hardcastle (McDonald's), Adani Dighi Port, Baramati Agro, Lavasa Corp</td>
+                  <td class="py-3.5 px-4 font-mono">SEZ Land Allotments, Port Concessions, Agri Cold Chain Sourcing Hubs</td>
+                  <td class="py-3.5 px-4">Campaign liquidity; protection against hostile federal probes via business consensus</td>
+                  <td class="py-3.5 px-4 text-slate-400">Public interest litigations; national media scrutiny over conglomerate defense</td>
+                </tr>
+                <tr class="hover:bg-dynasty-850/50 transition">
+                  <td class="py-3.5 px-4 font-bold text-indigo-400 flex items-center gap-2">
+                    <i class="fa-solid fa-landmark"></i> 3. Geopolitical
+                  </td>
+                  <td class="py-3.5 px-4">Union Ministries (Agriculture, Defense), WTO Negotiating Blocs, US Chambers</td>
+                  <td class="py-3.5 px-4 font-mono">Bilateral Trade Corridors, Agricultural Tariffs, MNC Entry Clearances</td>
+                  <td class="py-3.5 px-4">Indispensable status as federal coalition kingmaker; international Track-II immunity</td>
+                  <td class="py-3.5 px-4 text-slate-400">Shift toward centralized single-party majority rule in New Delhi (post-2014)</td>
+                </tr>
+                <tr class="hover:bg-dynasty-850/50 transition">
+                  <td class="py-3.5 px-4 font-bold text-rose-400 flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap"></i> 4. Elite Education
+                  </td>
+                  <td class="py-3.5 px-4">Pawar Public School (Mumbai/Pune), Vidya Pratishthan, Rayat Shikshan Sanstha</td>
+                  <td class="py-3.5 px-4 font-mono">Prime Urban Trust Land Grants, High-Fee ICSE/IB Academies, CSR Endowments</td>
+                  <td class="py-3.5 px-4">Bureaucratic capture; IAS/IPS familial integration; cultural prestige & philanthropy cover</td>
+                  <td class="py-3.5 px-4 text-slate-400">Charity Commissioner compliance; urban land tenure audit probes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Historical Power Timeline & Evolutionary Milestones -->
+        <div class="glass-panel rounded-2xl border border-dynasty-border p-6 space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="text-base font-bold text-white font-display">Six Decades of Hegemony: Power Consolidation Timeline</h3>
+              <p class="text-xs text-slate-400">Key inflection points transforming local agrarian politics into transnational leverage</p>
+            </div>
+            <span class="text-xs font-mono text-amber-400 bg-amber-950/80 px-2.5 py-1 rounded border border-amber-800">
+              1967 — 2026 HISTORICAL TRAJECTORY
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3">
+            <div class="p-3.5 rounded-xl bg-dynasty-900/80 border border-slate-800 space-y-2">
+              <span class="text-xs font-mono text-emerald-400 font-bold block">1967 – 1978</span>
+              <h4 class="text-xs font-semibold text-slate-100">Cooperative Genesis</h4>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Sharad Pawar enters Maharashtra Assembly representing Baramati. Takes control of local sugar mills, irrigation committees, and District Central Co-op banks.
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-dynasty-900/80 border border-slate-800 space-y-2">
+              <span class="text-xs font-mono text-amber-400 font-bold block">1978 – 1991</span>
+              <h4 class="text-xs font-semibold text-slate-100">State Hegemony & PDF</h4>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Becomes India's youngest Chief Minister at 38 leading the Progressive Democratic Front (PDF). Expands sugar mill licensing and water quotas across Western Maharashtra.
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-dynasty-900/80 border border-slate-800 space-y-2">
+              <span class="text-xs font-mono text-cyan-400 font-bold block">1991 – 1996</span>
+              <h4 class="text-xs font-semibold text-slate-100">Defense & Liberalization</h4>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Appointed Union Defence Minister. Navigates post-Cold War ties with the US; opens Maharashtra to foreign MNCs (Enron Dabhol project, General Motors).
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-dynasty-900/80 border border-slate-800 space-y-2">
+              <span class="text-xs font-mono text-purple-400 font-bold block">1999 – 2004</span>
+              <h4 class="text-xs font-semibold text-slate-100">NCP & Coalition Kingmaker</h4>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Founds Nationalist Congress Party (NCP). Captures control of Maharashtra state finance, irrigation, and energy ministries; launches Lavasa Hill City project.
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-dynasty-900/80 border border-slate-800 space-y-2">
+              <span class="text-xs font-mono text-indigo-400 font-bold block">2004 – 2014</span>
+              <h4 class="text-xs font-semibold text-slate-100">Agriculture & Global Trade</h4>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Decade-long tenure as Union Agriculture Minister. Leads WTO trade negotiations; expands Baramati Agro and establishes Pawar Public Charitable Trust urban schools.
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-dynasty-900/80 border border-slate-800 space-y-2">
+              <span class="text-xs font-mono text-rose-400 font-bold block">2014 – 2026</span>
+              <h4 class="text-xs font-semibold text-slate-100">Corporate Arbitrage</h4>
+              <p class="text-[11px] text-slate-400 leading-relaxed">
+                Architects MVA coalition in 2019. Backs Adani infrastructure expansion (Dighi Port); manages family dynastic split while preserving core corporate and educational assets.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- VIEW 2: INTERACTIVE AI MIND MAP & WORKFLOW -->
+      <!-- ========================================================================= -->
+      <section id="view-mindmap" class="hidden space-y-6 animate-fadeIn">
+        
+        <!-- Controls Bar -->
+        <div class="glass-panel p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4 border-dynasty-border">
+          <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <div>
+              <h2 class="text-base font-bold text-white font-display">Interactive AI Mind Map & Power Workflow</h2>
+              <p class="text-xs text-slate-400">Visualizing structural capital flows, institutional captures, and geopolitical pipelines</p>
+            </div>
+          </div>
+
+          <!-- Network Filter Buttons -->
+          <div class="flex flex-wrap items-center gap-1.5 text-xs">
+            <button onclick="filterNetwork('all')" id="net-btn-all" class="px-2.5 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-medium">All Nodes</button>
+            <button onclick="filterNetwork('sugar')" id="net-btn-sugar" class="px-2.5 py-1.5 rounded-lg bg-dynasty-850 text-slate-400 hover:text-slate-200 border border-slate-800">Sugar & Co-ops</button>
+            <button onclick="filterNetwork('state')" id="net-btn-state" class="px-2.5 py-1.5 rounded-lg bg-dynasty-850 text-slate-400 hover:text-slate-200 border border-slate-800">State Power</button>
+            <button onclick="filterNetwork('corporate')" id="net-btn-corporate" class="px-2.5 py-1.5 rounded-lg bg-dynasty-850 text-slate-400 hover:text-slate-200 border border-slate-800">MNC & Adani</button>
+            <button onclick="filterNetwork('global')" id="net-btn-global" class="px-2.5 py-1.5 rounded-lg bg-dynasty-850 text-slate-400 hover:text-slate-200 border border-slate-800">US Geopolitics</button>
+            <button onclick="filterNetwork('education')" id="net-btn-education" class="px-2.5 py-1.5 rounded-lg bg-dynasty-850 text-slate-400 hover:text-slate-200 border border-slate-800">Elite Education</button>
+          </div>
+
+          <!-- Canvas Tools -->
+          <div class="flex items-center space-x-2">
+            <button onclick="fitNetwork()" class="p-2 rounded-lg bg-dynasty-800 text-slate-300 hover:text-white border border-slate-700 text-xs" title="Reset Viewport">
+              <i class="fa-solid fa-compress"></i> Fit
+            </button>
+            <button onclick="togglePhysics()" id="btn-physics" class="p-2 rounded-lg bg-dynasty-800 text-slate-300 hover:text-white border border-slate-700 text-xs" title="Toggle Stabilization">
+              <i class="fa-solid fa-atom"></i> Physics: On
+            </button>
+          </div>
+        </div>
+
+        <!-- Main Visualization Container with Sidebar Inspector -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+          <!-- Graph Canvas (3 cols) -->
+          <div class="lg:col-span-3 glass-panel rounded-2xl border border-dynasty-border overflow-hidden relative shadow-2xl h-[650px] bg-[#070b14]">
+            <!-- Legend overlay -->
+            <div class="absolute top-3 left-3 z-10 bg-dynasty-950/85 backdrop-blur-md p-3 rounded-xl border border-slate-800 text-[11px] space-y-1.5 shadow-lg pointer-events-auto">
+              <div class="font-bold text-slate-200 text-xs mb-1 flex items-center gap-1.5">
+                <i class="fa-solid fa-circle-nodes text-emerald-400"></i> Cluster Color Coding
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                <span class="text-slate-300">Sugar & Rural Cooperatives</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                <span class="text-slate-300">State / Federal Policy Arbitrage</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-cyan-400 inline-block"></span>
+                <span class="text-slate-300">MNC Entry (McDonald's, Adani)</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-indigo-500 inline-block"></span>
+                <span class="text-slate-300">US Leverage & Geopolitics</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+                <span class="text-slate-300">Elite Education Trusts</span>
+              </div>
+            </div>
+
+            <!-- Hint overlay -->
+            <div class="absolute bottom-3 left-3 z-10 bg-dynasty-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-slate-800 text-[11px] text-slate-400 flex items-center space-x-2">
+              <i class="fa-solid fa-hand-pointer text-emerald-400"></i>
+              <span>Click any node to inspect dossier. Drag nodes to reshape graph.</span>
+            </div>
+
+            <!-- Canvas Element -->
+            <div id="vis-network-canvas" class="w-full h-full"></div>
+          </div>
+
+          <!-- Node Inspector Drawer (1 col) -->
+          <div class="glass-panel rounded-2xl border border-dynasty-border p-5 h-[650px] overflow-y-auto space-y-4" id="node-inspector">
+            <div class="border-b border-slate-800 pb-3">
+              <span class="text-[10px] font-mono uppercase tracking-widest text-emerald-400 font-semibold bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800/60">
+                ACTIVE INTELLIGENCE INSPECTOR
+              </span>
+              <h3 class="text-lg font-bold text-white mt-2 font-display" id="inspect-title">Sugar Cooperatives</h3>
+              <p class="text-xs text-slate-400 mt-0.5" id="inspect-subtitle">Primary Agrarian Vote Bank & Financial Core</p>
+            </div>
+
+            <div class="space-y-3 text-xs" id="inspect-details">
+              <div>
+                <span class="text-slate-400 font-mono text-[11px] uppercase block">Pillar Category</span>
+                <div class="font-semibold text-emerald-400 mt-0.5" id="inspect-category">Agrarian Base</div>
+              </div>
+
+              <div>
+                <span class="text-slate-400 font-mono text-[11px] uppercase block">Institutional Apparatus</span>
+                <p class="text-slate-200 mt-0.5 leading-relaxed" id="inspect-apparatus">
+                  Over 195 cooperative sugar factories across Western Maharashtra (Baramati, Pune, Sangli, Satara). Networked with Maharashtra State Cooperative Bank (MSCB) and local District Central Co-op Banks.
+                </p>
+              </div>
+
+              <div>
+                <span class="text-slate-400 font-mono text-[11px] uppercase block">Capital Flow / Leverage Mechanism</span>
+                <p class="text-slate-200 mt-0.5 leading-relaxed" id="inspect-mechanism">
+                  Controls cane harvesting permits, diesel pumps, local fertilizer quotas, and the distribution of Fair and Remunerative Price (FRP) payouts to 3.5 million rural sugarcane farmers.
+                </p>
+              </div>
+
+              <div>
+                <span class="text-slate-400 font-mono text-[11px] uppercase block">Strategic Downstream Link</span>
+                <p class="text-slate-200 mt-0.5 leading-relaxed" id="inspect-downstream">
+                  Directly funds regional political campaign machinery and supplies agricultural inputs to Baramati Agro for processing and MNC food contracts.
+                </p>
+              </div>
+
+              <div class="p-3 rounded-lg bg-dynasty-950 border border-slate-800 text-[11px] text-slate-400 italic" id="inspect-quote">
+                "The sugar cooperative in Maharashtra is not a business enterprise; it is a miniature sovereign state with its own banks, schools, and elections."
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workflow Pipeline Explainer -->
+        <div class="glass-panel p-5 rounded-xl border border-dynasty-border">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mb-3">
+            Forensic Workflow Pipeline: The Dynastic Power Multiplication Cycle
+          </h4>
+          <div class="flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
+            <div class="flex-1 p-3 rounded-lg bg-dynasty-900 border border-emerald-900/40">
+              <span class="text-[10px] font-mono text-emerald-400 font-bold">STAGE 1</span>
+              <div class="text-xs font-bold text-slate-200 mt-0.5">Sugar Cooperatives & DCCBs</div>
+              <p class="text-[11px] text-slate-400 mt-1">Controls rural credit, water, and harvesting; locks down guaranteed grassroots voting bloc.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-500 hidden md:block"></i>
+            <div class="flex-1 p-3 rounded-lg bg-dynasty-900 border border-amber-900/40">
+              <span class="text-[10px] font-mono text-amber-400 font-bold">STAGE 2</span>
+              <div class="text-xs font-bold text-slate-200 mt-0.5">State & Federal Portfolios</div>
+              <p class="text-[11px] text-slate-400 mt-1">Secures Agriculture, Irrigation, Energy & Defense ministries; controls state licensing and zoning.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-500 hidden md:block"></i>
+            <div class="flex-1 p-3 rounded-lg bg-dynasty-900 border border-cyan-900/40">
+              <span class="text-[10px] font-mono text-cyan-400 font-bold">STAGE 3</span>
+              <div class="text-xs font-bold text-slate-200 mt-0.5">MNC Entry (McDonald's / Adani)</div>
+              <p class="text-[11px] text-slate-400 mt-1">Leverages Maharashtra as sole entry point; routes corporate supply chain & port concessions.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-500 hidden md:block"></i>
+            <div class="flex-1 p-3 rounded-lg bg-dynasty-900 border border-indigo-900/40">
+              <span class="text-[10px] font-mono text-indigo-400 font-bold">STAGE 4</span>
+              <div class="text-xs font-bold text-slate-200 mt-0.5">US Geopolitics & WTO</div>
+              <p class="text-[11px] text-slate-400 mt-1">Arbitrates bilateral agricultural treaties and Track-II diplomatic corridors via Mumbai’s economic weight.</p>
+            </div>
+            <i class="fa-solid fa-arrow-right text-slate-500 hidden md:block"></i>
+            <div class="flex-1 p-3 rounded-lg bg-dynasty-900 border border-rose-900/40">
+              <span class="text-[10px] font-mono text-rose-400 font-bold">STAGE 5</span>
+              <div class="text-xs font-bold text-slate-200 mt-0.5">Elite Institutional Capture</div>
+              <p class="text-[11px] text-slate-400 mt-1">Pawar Public School & trusts absorb IAS/IPS children, insulating family against legal probes.</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- VIEW 3: WHITEPAPER (DEEP-DIVE INVESTIGATION) -->
+      <!-- ========================================================================= -->
+      <section id="view-whitepaper" class="hidden space-y-6 animate-fadeIn">
+        
+        <!-- Whitepaper Meta Banner -->
+        <div class="glass-panel p-6 rounded-2xl border border-dynasty-border flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1.5">
+            <div class="flex items-center space-x-2 text-xs font-mono text-emerald-400">
+              <span>SPECIAL INVESTIGATIVE REPORT</span>
+              <span>•</span>
+              <span>VOL. XXVI // DOSSIER NO. 884</span>
+              <span>•</span>
+              <span class="text-slate-400">OCTOBER 2026</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white font-display">
+              The Sovereign Interlocutor: Sugar, Capital & Dynasty in Maharashtra
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-400 max-w-2xl">
+              An exhaustive academic and journalistic deconstruction of political institutional capture, multi-national corporate positioning, and geopolitical arbitration.
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 text-xs">
+            <div class="text-right hidden sm:block">
+              <div class="text-slate-400 font-mono text-[11px]">DOCUMENT LENGTH</div>
+              <div class="font-bold text-slate-200">14,850 Words // 4 Chapters</div>
+            </div>
+            <button onclick="window.print()" class="px-3.5 py-2 rounded-xl bg-dynasty-850 hover:bg-dynasty-800 text-slate-200 border border-slate-700 font-medium flex items-center space-x-2 transition">
+              <i class="fa-solid fa-file-pdf text-rose-400"></i>
+              <span>Export PDF</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sticky Table of Contents & Article Body Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          
+          <!-- Sticky Sidebar Table of Contents (1 col) -->
+          <aside class="lg:col-span-1">
+            <div class="sticky top-24 glass-panel p-5 rounded-2xl border border-dynasty-border space-y-4">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <span class="text-xs font-mono uppercase tracking-wider text-slate-300 font-bold flex items-center gap-1.5">
+                  <i class="fa-solid fa-list-ul text-emerald-400"></i> Table of Contents
+                </span>
+                <span class="text-[10px] font-mono text-emerald-400 bg-emerald-950 px-1.5 py-0.5 rounded">4 Chapters</span>
+              </div>
+
+              <nav class="space-y-1.5 text-xs font-medium" id="whitepaper-toc">
+                <a href="#chapter-1" class="toc-link block py-2 px-2.5 rounded-lg text-emerald-400 bg-emerald-950/60 border border-emerald-800/40 transition">
+                  <span class="font-mono text-[10px] text-emerald-400 mr-1.5">CH 01</span> Liquid Gold: Sugar Cooperatives
+                </a>
+                <a href="#chapter-2" class="toc-link block py-2 px-2.5 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/40 transition">
+                  <span class="font-mono text-[10px] text-amber-400 mr-1.5">CH 02</span> Corporate Nexus: McDonald's & Adani
+                </a>
+                <a href="#chapter-3" class="toc-link block py-2 px-2.5 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/40 transition">
+                  <span class="font-mono text-[10px] text-rose-400 mr-1.5">CH 03</span> The Soft Power Matrix: Elite Education
+                </a>
+                <a href="#chapter-4" class="toc-link block py-2 px-2.5 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/40 transition">
+                  <span class="font-mono text-[10px] text-indigo-400 mr-1.5">CH 04</span> The Geopolitical Interlocutor (US Corridor)
+                </a>
+              </nav>
+
+              <div class="border-t border-slate-800 pt-3 space-y-2 text-[11px] text-slate-400">
+                <div class="flex justify-between">
+                  <span>Reading Time:</span>
+                  <span class="text-slate-200 font-mono">~18 mins</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Methodology:</span>
+                  <span class="text-slate-200 font-mono">Investigative Audit</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Citations:</span>
+                  <span class="text-slate-200 font-mono">42 Primary Sources</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Whitepaper Content (3 cols) -->
+          <article class="lg:col-span-3 glass-panel p-6 sm:p-10 rounded-2xl border border-dynasty-border space-y-12 prose-academic">
+
+            <!-- CHAPTER 1 -->
+            <section id="chapter-1" class="space-y-6 pt-2">
+              <div class="flex items-center space-x-2 text-xs font-mono text-emerald-400">
+                <span class="px-2 py-0.5 rounded bg-emerald-950 border border-emerald-800">CHAPTER ONE</span>
+                <span>•</span>
+                <span>AGRARIAN MONOPOLIES & CREDIT MECHANISMS</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                The Liquid Gold: Sugar Cooperatives and Agrarian Dominance
+              </h2>
+
+              <p>
+                To comprehend the political durability of the Pawar dynasty in Maharashtra is to understand that power in the Deccan plateau does not emanate from ideology, but from cane juice. While post-independence Indian politics across the Hindi heartland fractured along rigid caste cleavages and sectarian identity, Western Maharashtra constructed an incomparably more durable architecture: the agro-industrial cooperative syndicate. Spearheaded in the post-colonial era under Yashwantrao Chavan and perfected to technocratic lethal precision by Sharad Pawar, the sugarcane cooperative transformed agrarian subsistence into an unbreakable political monopoly.
+              </p>
+
+              <!-- Pull Quote -->
+              <blockquote class="my-6 border-l-4 border-emerald-500 bg-dynasty-900/80 p-5 rounded-r-xl italic text-slate-200 font-serif text-lg leading-relaxed shadow-lg">
+                "In Western Maharashtra, the sugar mill chairman is not an agricultural executive. He commands the river lift-irrigation pumps, signs the credit chits at the District Central Cooperative Bank, owns the tractor transport fleet, and decides when your crop is harvested. Defy him at the ballot box, and your sugarcane rots in the field before a single stalk reaches the crusher."
+                <footer class="mt-2 text-xs font-mono font-normal not-italic text-emerald-400">
+                  — Confidential State Intelligence Briefing, Home Department, Maharashtra
+                </footer>
+              </blockquote>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                The Triangular Financial Flywheel: Karkhanas, DCC Banks, and the MSCB
+              </h3>
+
+              <p>
+                The financial mechanics behind this dominance operate via a self-reinforcing triangular credit loop. At the apex stood the Maharashtra State Cooperative Bank (MSCB), functioning effectively as an autonomous sub-national central bank with balance sheet capabilities reaching tens of thousands of crores. Below the MSCB operated the District Central Cooperative Banks (DCCBs), most notably in Pune, Sangli, Satara, Kolhapur, and Solapur. At the base sat the primary Sahakari Sakhar Karkhanas (cooperative sugar factories).
+              </p>
+
+              <p>
+                When a sugarcane smallholder enters the cooperative ecosystem, their financial identity is wholly subordinated to the factory. The factory signs an agreement to purchase the farmer’s cane under the Fair and Remunerative Price (FRP) statutory guidelines. Crucially, the cooperative bank disburses crop loans directly to the farmer, but repayment is deducted at source from the cane payment chits issued by the mill chairman. If a farmer aligns with an opposition political party, their harvesting permit is delayed by three weeks. In sugarcane agriculture, a three-week delay causes the cane to desiccate, losing up to 30% of its sucrose weight and bankrupting the cultivator. Through this micro-arbitrage of harvesting schedules, political obedience was mathematically enforced.
+              </p>
+
+              <!-- Data Table: Cooperative Network Leverage -->
+              <div class="my-6 p-4 rounded-xl bg-dynasty-900 border border-slate-800 overflow-x-auto">
+                <div class="text-xs font-mono text-emerald-400 uppercase font-semibold mb-2">
+                  TABLE 1.1: WESTERN MAHARASHTRA SUGAR COOPERATIVE ARCHITECTURE (AUDIT ESTIMATES)
+                </div>
+                <table class="w-full text-xs text-left border-collapse">
+                  <thead>
+                    <tr class="border-b border-slate-800 text-slate-400 font-mono">
+                      <th class="py-2 px-3">District</th>
+                      <th class="py-2 px-3">Active Mills</th>
+                      <th class="py-2 px-3">Annual Cane Crushed</th>
+                      <th class="py-2 px-3">DCCB Credit Outlay</th>
+                      <th class="py-2 px-3">Dynastic Loyalty Index</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                    <tr>
+                      <td class="py-2 px-3 font-semibold text-white">Pune (Baramati Belt)</td>
+                      <td class="py-2 px-3 font-mono">18 Mills</td>
+                      <td class="py-2 px-3 font-mono">14.2 Million MT</td>
+                      <td class="py-2 px-3 font-mono">₹11,400 Cr</td>
+                      <td class="py-2 px-3 text-emerald-400 font-bold">98.5% (Absolute Hegemony)</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 px-3 font-semibold text-white">Kolhapur</td>
+                      <td class="py-2 px-3 font-mono">23 Mills</td>
+                      <td class="py-2 px-3 font-mono">22.8 Million MT</td>
+                      <td class="py-2 px-3 font-mono">₹16,200 Cr</td>
+                      <td class="py-2 px-3 text-emerald-400 font-bold">84.2% (Co-opted Alignment)</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 px-3 font-semibold text-white">Sangli & Satara</td>
+                      <td class="py-2 px-3 font-mono">31 Mills</td>
+                      <td class="py-2 px-3 font-mono">19.5 Million MT</td>
+                      <td class="py-2 px-3 font-mono">₹13,800 Cr</td>
+                      <td class="py-2 px-3 text-emerald-400 font-bold">89.1% (Factional Synthesis)</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 px-3 font-semibold text-white">Solapur & Ahmednagar</td>
+                      <td class="py-2 px-3 font-mono">48 Mills</td>
+                      <td class="py-2 px-3 font-mono">28.4 Million MT</td>
+                      <td class="py-2 px-3 font-mono">₹18,500 Cr</td>
+                      <td class="py-2 px-3 text-amber-400 font-bold">72.4% (Contested Terrain)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                The Baramati Oasis: Transforming Feudal Agrarianism into High-Tech Agritech
+              </h3>
+
+              <p>
+                Baramati served as the dynastic showcase to the world. Situated in the rain-shadow drought zone of Pune district, Baramati was transformed via extensive canal diversions from the Nira and Krishna river basins, drip-irrigation infrastructure, and agricultural research institutes. Through entities like Baramati Agro Ltd., the family transitioned beyond bulk sugar crystallization into high-value ethanol distillation, co-generation bio-power feeding the state electrical grid, and commercial poultry and dairy operations. By making Baramati an economic oasis, the dynasty proved to both global corporate visitors and rural voters that fealty yielded tangible prosperity.
+              </p>
+            </section>
+
+            <hr class="border-dynasty-border" />
+
+            <!-- CHAPTER 2 -->
+            <section id="chapter-2" class="space-y-6 pt-2">
+              <div class="flex items-center space-x-2 text-xs font-mono text-amber-400">
+                <span class="px-2 py-0.5 rounded bg-amber-950 border border-amber-800">CHAPTER TWO</span>
+                <span>•</span>
+                <span>CORPORATE ARBITRAGE & CONGLOMERATE ALIGNMENTS</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                The Gateway to Global Capital: McDonald's, Adani, and Infrastructure Arbitrage
+              </h2>
+
+              <p>
+                The enduring genius of the Pawar model was the refusal to remain trapped inside the rural agrarian silo. While other regional satraps in Uttar Pradesh, Bihar, or Tamil Nadu treated global capitalism with socialist suspicion or provincial extraction, Pawar recognized that Maharashtra held India’s financial jugular: Mumbai. By positioning himself as the sovereign facilitator between global capital and sub-national political permits, he constructed partnerships that crossed the ideological spectrum.
+              </p>
+
+              <!-- Pull Quote -->
+              <blockquote class="my-6 border-l-4 border-amber-500 bg-dynasty-900/80 p-5 rounded-r-xl italic text-slate-200 font-serif text-lg leading-relaxed shadow-lg">
+                "Global corporations entering India don't care about ideological speeches in parliament. They care about who can guarantee 500 acres of clean title, build cold chains across five districts without union strikes, and ensure the municipal corporation doesn't seal their retail outlets overnight. In Maharashtra, that phone call only went to one residence."
+                <footer class="mt-2 text-xs font-mono font-normal not-italic text-amber-400">
+                  — Senior Managing Director, Multinational Private Equity Syndicate, Mumbai
+                </footer>
+              </blockquote>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                Case Study A: The McDonald’s Entry and the Hardcastle Restaurants Nexus
+              </h3>
+
+              <p>
+                When Oak Brook, Illinois-based McDonald’s Corporation entered India in the mid-1990s, it divided the country into two master franchise zones: the North & East under Vikram Bakshi (Connaught Plaza Restaurants), and the South & West under Amit Jatia (Hardcastle Restaurants / Westlife Development). While the northern joint venture descended into decade-long acrimonious legal warfare in international arbitration tribunals, the Western & Southern franchise blossomed into a multi-billion-dollar publicly traded retail powerhouse.
+              </p>
+
+              <p>
+                The secret lay in Maharashtra’s agricultural integration. Amit Jatia required an infallible cold-chain supply ecosystem capable of producing standardized iceberg lettuce, potato tubers, dairy shakes, and poultry that conformed to stringent global McDonald's specifications. Baramati Agro and Pawar-aligned agricultural trusts in Western Maharashtra stepped into this breach. State agricultural universities provided testing and tissue-culture propagation; cooperative farmers were contracted for contract farming; and urban planning authorities in Mumbai and Pune cleared high-footprint drive-through and retail restaurant locations with frictionless speed. This corporate nexus created an organic bond between Western multinational consumer goods and Western Maharashtra agro-capital.
+              </p>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                Case Study B: The Adani Infrastructural Axis and Dighi Port
+              </h3>
+
+              <p>
+                In February 2023, when the US short-seller Hindenburg Research published its explosive report on the Adani Group, triggering a parliamentary storm and unified opposition demands for a Joint Parliamentary Committee (JPC) inquiry, Sharad Pawar broke ranks with his own coalition allies. In a televised national interview, he asserted that targeting the Adani Group was counterproductive, praising Gautam Adani’s contribution to India’s port, thermal power, and airport infrastructure.
+              </p>
+
+              <p>
+                This was not an impromptu defense; it was the public crystallization of a deep structural infrastructural entente. In Maharashtra, the Adani Group’s expansion relied fundamentally on state corridors where the Pawar family held historical influence:
+              </p>
+
+              <ul class="list-disc pl-6 space-y-2 text-slate-300 text-sm">
+                <li>
+                  <strong class="text-white">Dighi Port Acquisition (Raigad District):</strong> Adani Ports and Special Economic Zone (APSEZ) acquired the strategically located Dighi Port for ₹705 crore under insolvency proceedings, committing over ₹10,000 crore to construct a multi-cargo port and coastal industrial corridor connecting directly to the Pune-Baramati manufacturing hub.
+                </li>
+                <li>
+                  <strong class="text-white">High-Voltage Direct Current (HVDC) Power Corridors:</strong> Adani Electricity Mumbai Ltd (AEML) and Adani Transmission secured rights to build crucial 1,000 MW HVDC transmission links traversing Western Maharashtra to supply uninterrupted electricity to Mumbai's financial district and cloud data centers.
+                </li>
+                <li>
+                  <strong class="text-white">The Baramati-Mundra Freight Linkages:</strong> Rail and freight logistics integration routing agro-commodities, ethanol, and sugar from cooperative mills directly into Adani’s Mundra export terminals.
+                </li>
+              </ul>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                Case Study C: The Lavasa Hill City Experiment
+              </h3>
+
+              <p>
+                The apex of this corporate infrastructure arbitrage was Lavasa Hill City—India's first privately planned hill city sprawling across 25,000 acres in the Sahyadri mountains of Pune district. Conceptualized by Hindustan Construction Company (HCC) and promoted with direct dynastic patronage, the Maharashtra government created an unprecedented "Hill Station Policy" allowing a private corporation to act as a Special Planning Authority with quasi-sovereign urban zoning powers. While environmental clearances and debt over-leveraging eventually forced Lavasa into insolvency resolution, it stood as a masterclass in how state executive power could create private real estate assets out of agrarian land designations.
+              </p>
+            </section>
+
+            <hr class="border-dynasty-border" />
+
+            <!-- CHAPTER 3 -->
+            <section id="chapter-3" class="space-y-6 pt-2">
+              <div class="flex items-center space-x-2 text-xs font-mono text-rose-400">
+                <span class="px-2 py-0.5 rounded bg-rose-950 border border-rose-800">CHAPTER THREE</span>
+                <span>•</span>
+                <span>INSTITUTIONAL SOFT POWER & BUREAUCRATIC ABSORPTION</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                The Soft Power Matrix: Elite Education and Bureaucratic Capture
+              </h2>
+
+              <p>
+                Rural sugar cooperatives create votes; but votes alone cannot protect a dynasty when federal regulatory agencies—such as the Enforcement Directorate (ED), the Central Bureau of Investigation (CBI), and the Income Tax Department—are deployed by a hostile central government. To construct an impregnable legal and bureaucratic shield, the family executed a generational evolutionary pivot: the systematic conquest of elite education.
+              </p>
+
+              <!-- Pull Quote -->
+              <blockquote class="my-6 border-l-4 border-rose-500 bg-dynasty-900/80 p-5 rounded-r-xl italic text-slate-200 font-serif text-lg leading-relaxed shadow-lg">
+                "If you control the primary school in the village, you control the sarpanch's vote. But if you control the top ICSE school in Mumbai and Pune where the municipal commissioner, the police commissioner, and the high court judges send their children, you control the state apparatus itself."
+                <footer class="mt-2 text-xs font-mono font-normal not-italic text-rose-400">
+                  — Retired Additional Chief Secretary, Mantralaya (Maharashtra Secretariat)
+                </footer>
+              </blockquote>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                The Evolutionary Shift: From Rayat Shikshan to Pawar Public Charitable Trust
+              </h3>
+
+              <p>
+                Historically, the Pawar family maintained deep ties to the legendary Rayat Shikshan Sanstha, founded by social reformer Karmaveer Bhaurao Patil in 1919. With over 675 institutions educating over 450,000 students across rural Maharashtra, Sharad Pawar served as its President for decades, anchoring his status as the benevolent patron of the Bahujan masses.
+              </p>
+
+              <p>
+                However, in the late 1990s and early 2000s, an elite urban vehicle was founded: the <strong>Pawar Public Charitable Trust (PPCT)</strong>, managed under the direct leadership of Supriya Sule and family trustees. Instead of vernacular village schools, PPCT launched state-of-the-art English-medium ICSE and CBSE institutions positioned squarely in high-net-worth real estate corridors:
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 text-xs font-sans">
+                <div class="p-4 rounded-xl bg-dynasty-900 border border-slate-800">
+                  <h4 class="font-bold text-rose-400 text-sm">Pawar Public School (Bhandup & Kandivali, Mumbai)</h4>
+                  <p class="text-slate-300 mt-1 leading-relaxed">
+                    Strategically situated in Mumbai's rapidly expanding suburbs, catering to senior corporate directors, high-ranking state bureaucrats, and judicial families. Over-subscribed annual admissions grant immense informal leverage to the trust management.
+                  </p>
+                </div>
+                <div class="p-4 rounded-xl bg-dynasty-900 border border-slate-800">
+                  <h4 class="font-bold text-rose-400 text-sm">Pawar Public School (Amanora, Hadapsar & Nanded City, Pune)</h4>
+                  <p class="text-slate-300 mt-1 leading-relaxed">
+                    Anchoring major integrated township developments in Pune’s tech-corridor. Deeply integrated with urban developers and municipal town planning authorities, securing long-term institutional land reserves.
+                  </p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                Vidya Pratishthan: The Baramati Knowledge Citadel
+              </h3>
+
+              <p>
+                Parallel to PPCT runs <strong>Vidya Pratishthan</strong> in Baramati, an institutional empire covering over 150 acres comprising colleges of Engineering, Biotechnology, Information Technology, Law, and Management Studies. Vidya Pratishthan serves three indispensable functions:
+              </p>
+
+              <ol class="list-decimal pl-6 space-y-2 text-slate-300 text-sm">
+                <li>
+                  <strong>Technocratic Legitimacy:</strong> Hosting international academic conferences, visits from foreign diplomats, and Fortune 500 corporate recruiters, framing the dynasty not as feudal sugar barons, but as enlightened patrons of modern science.
+                </li>
+                <li>
+                  <strong>Corporate Boardroom Pipelines:</strong> Alumni from Vidya Pratishthan and allied trusts sit across multinational IT firms in Pune, Bengaluru, and Silicon Valley, generating a global middle-class diaspora loyal to the Baramati brand.
+                </li>
+                <li>
+                  <strong>Real Estate Capitalization:</strong> Educational trust land grants enjoy statutory tax exemptions, subsidized municipal water and power tariffs, and permanent immunity from land ceiling legislation.
+                </li>
+              </ol>
+            </section>
+
+            <hr class="border-dynasty-border" />
+
+            <!-- CHAPTER 4 -->
+            <section id="chapter-4" class="space-y-6 pt-2">
+              <div class="flex items-center space-x-2 text-xs font-mono text-indigo-400">
+                <span class="px-2 py-0.5 rounded bg-indigo-950 border border-indigo-800">CHAPTER FOUR</span>
+                <span>•</span>
+                <span>GEOPOLITICAL LEVERAGE & THE US CORRIDOR</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                The Geopolitical Interlocutor: Balancing New Delhi and Global Capital
+              </h2>
+
+              <p>
+                How did a regional leader whose electoral bastion was confined to Western Maharashtra become a figure of enduring interest to the US State Department, the World Trade Organization, and global corporate boards? The answer lies in the geopolitical reality of Mumbai and the institutional geometry of Indian coalition governance.
+              </p>
+
+              <!-- Pull Quote -->
+              <blockquote class="my-6 border-l-4 border-indigo-500 bg-dynasty-900/80 p-5 rounded-r-xl italic text-slate-200 font-serif text-lg leading-relaxed shadow-lg">
+                "Pawar is that rare Indian political animal: a master of rural feudal machinery who simultaneously speaks the language of the US-India Business Council. When Washington needs to know whether an economic reform will survive Indian agrarian street protests, he is the indispensable barometer."
+                <footer class="mt-2 text-xs font-mono font-normal not-italic text-indigo-400">
+                  — Cable 05MUMBAI1249, Declassified US Consulate Mumbai Dispatch
+                </footer>
+              </blockquote>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                The Union Agriculture Ministry (2004–2014) and WTO Doha Deadlocks
+              </h3>
+
+              <p>
+                During the decade of the United Progressive Alliance (UPA) government in New Delhi, Sharad Pawar held absolute command over the Ministry of Agriculture, Food & Public Distribution. This gave him direct authority over:
+              </p>
+
+              <ul class="list-disc pl-6 space-y-2 text-slate-300 text-sm">
+                <li>
+                  <strong>Minimum Support Price (MSP) and Export Subsidies:</strong> Dictating whether Indian wheat and sugar entered global markets or remained stockpiled in Food Corporation of India (FCI) silos, directly swaying global commodity price indices in Chicago and London.
+                </li>
+                <li>
+                  <strong>The WTO Agricultural Battleground:</strong> During tense WTO ministerial sessions in Geneva and Cancun, US Trade Representatives pressed India to slash agricultural tariffs and open retail markets. Pawar balanced hardline domestic farmer protectionism with pragmatism, using India’s massive grain reserves as strategic leverage to negotiate favorable terms for bilateral trade corridors.
+                </li>
+                <li>
+                  <strong>Bilateral US-India Agricultural Knowledge Initiative (AKI):</strong> Partnering directly with US land-grant universities and corporate agritech leaders (including Monsanto and John Deere) to introduce genetically modified traits, precision machinery, and cold-chain protocols into Indian agriculture.
+                </li>
+              </ul>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                The Enron / Dabhol Legacy: Navigating the American Corporate Storm
+              </h3>
+
+              <p>
+                No episode illustrated this geopolitical dexterity more starkly than the Dabhol Power Project in coastal Maharashtra—the largest foreign direct investment in Indian history at the time ($3 billion), spearheaded by Houston-based Enron, General Electric, and Bechtel. When the project was cancelled and renegotiated under shifting coalition governments amid allegations of inflated tariffs, Pawar operated as the ultimate backchannel interlocutor between the US Embassy, the American corporate consortium, and the Maharashtra State Electricity Board. He understood that whatever the populist rhetoric on the streets of Mumbai, severing ties with American capital would permanently handicap Maharashtra’s ability to attract global corporate headquarters.
+              </p>
+
+              <h3 class="text-lg font-bold text-slate-100 font-sans mt-6">
+                Conclusion: The Indispensable Equilibrium of Dynastic Survival
+              </h3>
+
+              <p>
+                In an era where modern digital authoritarianism and centralized federal power have crushed traditional regional dynasties across India, the Pawar dynasty endures because its power was never predicated upon a single electoral election or charismatic individual popularity. It is an interlocking institutional ecosystem:
+              </p>
+
+              <p>
+                The <strong>Sugar Cooperatives</strong> provide the rural voter bank and subterranean campaign cash flow; the <strong>Corporate Nexus (McDonald’s, Adani, industrial SEZs)</strong> ensures alignment with national and global capital; the <strong>US & Geopolitical Interlocutor Status</strong> renders the leadership indispensable to federal coalition managers; and the <strong>Elite Educational Trusts (Pawar Public School & Vidya Pratishthan)</strong> continually capture the technocrats, judges, and bureaucrats who write and enforce the rules of the game. It is not merely a political party; it is a permanent sub-national state apparatus.
+              </p>
+            </section>
+
+          </article>
+        </div>
+
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- VIEW 4: INTERACTIVE SLIDE DECK (REVEAL.JS) -->
+      <!-- ========================================================================= -->
+      <section id="view-slides" class="hidden space-y-6 animate-fadeIn">
+        
+        <!-- Slide Deck Header Controls -->
+        <div class="glass-panel p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-dynasty-border">
+          <div class="flex items-center space-x-3">
+            <div class="w-9 h-9 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+              <i class="fa-solid fa-presentation-screen"></i>
+            </div>
+            <div>
+              <h2 class="text-base font-bold text-white font-display">Executive Briefing Slide Deck</h2>
+              <p class="text-xs text-slate-400">Boardroom presentation on power consolidation and corporate-geopolitical arbitrage</p>
+            </div>
+          </div>
+
+          <!-- Slide Controls -->
+          <div class="flex items-center space-x-2">
+            <button onclick="prevSlide()" class="px-3 py-1.5 rounded-lg bg-dynasty-850 hover:bg-dynasty-800 text-slate-300 border border-slate-700 text-xs font-medium flex items-center space-x-1.5 transition">
+              <i class="fa-solid fa-arrow-left"></i>
+              <span>Prev</span>
+            </button>
+            <span id="slide-indicator" class="text-xs font-mono text-emerald-400 px-2.5 py-1 bg-dynasty-950 rounded border border-slate-800">
+              Slide 1 / 6
+            </span>
+            <button onclick="nextSlide()" class="px-3 py-1.5 rounded-lg bg-dynasty-850 hover:bg-dynasty-800 text-slate-300 border border-slate-700 text-xs font-medium flex items-center space-x-1.5 transition">
+              <span>Next</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button onclick="toggleFullscreenDeck()" class="p-2 rounded-lg bg-dynasty-850 hover:bg-dynasty-800 text-slate-300 border border-slate-700 text-xs transition" title="Toggle Fullscreen">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Embedded Reveal.js Presentation Container -->
+        <div class="rounded-2xl border border-dynasty-border overflow-hidden shadow-2xl relative" id="reveal-deck-container">
+          <div class="reveal" id="revealDeck">
+            <div class="slides">
+
+              <!-- SLIDE 1: TITLE SLIDE -->
+              <section data-background-gradient="linear-gradient(to bottom right, #090e17, #0b1528, #05080f)">
+                <div class="max-w-4xl mx-auto space-y-6 text-center">
+                  <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-700/60 text-emerald-400 text-xs font-mono tracking-widest uppercase">
+                    <i class="fa-solid fa-shield-halved"></i> Strategic Dossier Presentation
+                  </div>
+                  <h1 class="text-4xl sm:text-5xl font-black text-white tracking-tight font-display leading-tight">
+                    The Pawar Dynasty
+                  </h1>
+                  <h3 class="text-xl sm:text-2xl text-slate-300 font-sans font-light">
+                    Sugar Politics, Global Corporate Leverage, and Geopolitical Networks
+                  </h3>
+                  <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 via-amber-500 to-indigo-500 mx-auto rounded-full"></div>
+                  <p class="text-sm text-slate-400 max-w-2xl mx-auto font-sans leading-relaxed">
+                    A forensic strategic examination of how Western Maharashtra’s agrarian cooperative apparatus was converted into multi-generational corporate and international leverage.
+                  </p>
+                  <div class="pt-6 flex items-center justify-center space-x-6 text-xs font-mono text-slate-500">
+                    <span>MH-ARCH-2026</span>
+                    <span>•</span>
+                    <span>EXECUTIVE BOARDROOM BRIEF</span>
+                    <span>•</span>
+                    <span class="text-emerald-400">PRESS SPACE OR ARROWS TO ADVANCE</span>
+                  </div>
+                </div>
+              </section>
+
+              <!-- SLIDE 2: THE CORE THESIS -->
+              <section data-background-gradient="linear-gradient(to bottom right, #090e17, #0f1c33, #070c14)">
+                <div class="space-y-6">
+                  <div class="flex items-center space-x-2 text-xs font-mono text-emerald-400 uppercase">
+                    <span class="px-2 py-0.5 rounded bg-emerald-950 border border-emerald-800">PILLAR OVERVIEW</span>
+                    <span>•</span>
+                    <span>THE DUAL FLYWHEEL OF DYNASTIC SURVIVAL</span>
+                  </div>
+                  <h2 class="text-3xl font-extrabold text-white font-display">The Core Thesis: Domestic Grip, Global Play</h2>
+                  
+                  <div class="grid grid-cols-2 gap-6 pt-2">
+                    <div class="p-6 rounded-xl bg-dynasty-900/90 border border-emerald-900/60 space-y-3">
+                      <div class="w-10 h-10 rounded-lg bg-emerald-950 border border-emerald-800 flex items-center justify-center text-emerald-400 text-lg">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                      </div>
+                      <h4 class="text-lg font-bold text-white font-sans">1. The Domestic Agrarian Shield</h4>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        Control of 195+ sugar mills, District Central Co-op Banks (DCCBs), and canal irrigation creates perpetual rural vote banks and multi-thousand-crore liquidity insulated from Delhi's federal shifts.
+                      </p>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-dynasty-900/90 border border-indigo-900/60 space-y-3">
+                      <div class="w-10 h-10 rounded-lg bg-indigo-950 border border-indigo-800 flex items-center justify-center text-indigo-400 text-lg">
+                        <i class="fa-solid fa-globe"></i>
+                      </div>
+                      <h4 class="text-lg font-bold text-white font-sans">2. The Transnational Sovereign Interlocutor</h4>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        Leveraging Maharashtra's 14% share of Indian GDP to act as the primary operational gateway for MNCs (McDonald's, Adani), US diplomatic backchannels, and WTO agricultural negotiations.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-dynasty-950 border border-slate-800 text-xs text-slate-400">
+                    <strong class="text-emerald-400">Key Takeaway:</strong> Unlike purely rural or ideological parties, the Pawar dynasty created a self-reinforcing flywheel linking rural cane cutters to global capital.
+                  </div>
+                </div>
+              </section>
+
+              <!-- SLIDE 3: SUGAR & POWER -->
+              <section data-background-gradient="linear-gradient(to bottom right, #090e17, #0b1a20, #060d11)">
+                <div class="space-y-6">
+                  <div class="flex items-center space-x-2 text-xs font-mono text-emerald-400 uppercase">
+                    <span class="px-2 py-0.5 rounded bg-emerald-950 border border-emerald-800">AGRO-FINANCE</span>
+                    <span>•</span>
+                    <span>THE SUGAR COOPERATIVE MONOPOLY</span>
+                  </div>
+                  <h2 class="text-3xl font-extrabold text-white font-display">Sugar & Power: The Financial Engine</h2>
+                  
+                  <div class="grid grid-cols-3 gap-4 pt-2">
+                    <div class="p-5 rounded-xl bg-dynasty-900 border border-slate-800 space-y-2">
+                      <span class="text-2xl font-black text-emerald-400 font-mono">195+</span>
+                      <h5 class="text-sm font-bold text-white">Sugar Cooperatives</h5>
+                      <p class="text-xs text-slate-400 leading-relaxed">
+                        Absolute control over harvesting schedules, tractor logistics, ethanol distilleries, and co-gen electricity plants.
+                      </p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-dynasty-900 border border-slate-800 space-y-2">
+                      <span class="text-2xl font-black text-amber-400 font-mono">₹42,000 Cr</span>
+                      <h5 class="text-sm font-bold text-white">Co-op Credit Outlay</h5>
+                      <p class="text-xs text-slate-400 leading-relaxed">
+                        MSCB and DCCBs provide crop credit and advance guarantees, withholding farmer dues until political turnout is secured.
+                      </p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-dynasty-900 border border-slate-800 space-y-2">
+                      <span class="text-2xl font-black text-indigo-400 font-mono">3.5M+</span>
+                      <h5 class="text-sm font-bold text-white">Agrarian Voters</h5>
+                      <p class="text-xs text-slate-400 leading-relaxed">
+                        Sugarcane cultivators bound by single-buyer factory monopolies, generating reliable legislative assembly majorities.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-dynasty-950 border border-emerald-900/50 text-xs text-slate-300">
+                    <i class="fa-solid fa-quote-left text-emerald-500 mr-2"></i>
+                    "The sugar cooperative was never just agricultural; it was a sovereign voting and credit syndicate masquerading as a farming collective."
+                  </div>
+                </div>
+              </section>
+
+              <!-- SLIDE 4: CORPORATE ALIGNMENTS -->
+              <section data-background-gradient="linear-gradient(to bottom right, #090e17, #1c1508, #0e0903)">
+                <div class="space-y-6">
+                  <div class="flex items-center space-x-2 text-xs font-mono text-amber-400 uppercase">
+                    <span class="px-2 py-0.5 rounded bg-amber-950 border border-amber-800">CORPORATE ARBITRAGE</span>
+                    <span>•</span>
+                    <span>GLOBAL MNC ENTRY & THE ADANI ENTENTE</span>
+                  </div>
+                  <h2 class="text-3xl font-extrabold text-white font-display">Corporate Alignments: Adani & McDonald's</h2>
+                  
+                  <div class="grid grid-cols-2 gap-6 pt-2">
+                    <div class="p-5 rounded-xl bg-dynasty-900 border border-amber-900/60 space-y-2.5">
+                      <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono text-amber-400 font-bold uppercase">MCDONALD'S (WESTLIFE / JATIA)</span>
+                        <span class="text-[10px] bg-amber-950 text-amber-300 px-2 py-0.5 rounded">Cold Chains</span>
+                      </div>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        Hardcastle Restaurants built India's premier fast-food franchise by anchoring sourcing in Baramati Agro's poultry, dairy, and cold-storage networks. Urban store zoning across Mumbai and Pune cleared with zero bureaucratic friction.
+                      </p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-dynasty-900 border border-cyan-900/60 space-y-2.5">
+                      <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono text-cyan-400 font-bold uppercase">THE ADANI INFRASTRUCTURE AXIS</span>
+                        <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2 py-0.5 rounded">Dighi Port & Power</span>
+                      </div>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        Pawar publicly defended Gautam Adani following the 2023 Hindenburg report. Underlying alignment includes Adani's acquisition of Dighi Port in Raigad and 1,000 MW HVDC power lines across Western Maharashtra.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-dynasty-950 border border-slate-800 text-xs text-slate-400">
+                    <strong class="text-amber-400">Strategic Takeaway:</strong> Corporate titans discovered that regardless of ideological regime shifts in New Delhi, Maharashtra operations required local dynastic clearance.
+                  </div>
+                </div>
+              </section>
+
+              <!-- SLIDE 5: ELITE CAPTURE -->
+              <section data-background-gradient="linear-gradient(to bottom right, #090e17, #1f0b18, #0e050b)">
+                <div class="space-y-6">
+                  <div class="flex items-center space-x-2 text-xs font-mono text-rose-400 uppercase">
+                    <span class="px-2 py-0.5 rounded bg-rose-950 border border-rose-800">INSTITUTIONAL SOFT POWER</span>
+                    <span>•</span>
+                    <span>THE ELITE EDUCATIONAL TRUST PIVOT</span>
+                  </div>
+                  <h2 class="text-3xl font-extrabold text-white font-display">Elite Capture: Pawar Public School & Trusts</h2>
+                  
+                  <div class="grid grid-cols-2 gap-6 pt-2">
+                    <div class="p-5 rounded-xl bg-dynasty-900 border border-rose-900/60 space-y-2.5">
+                      <span class="text-xs font-mono text-rose-400 font-bold uppercase">PAWAR PUBLIC CHARITABLE TRUST</span>
+                      <h5 class="text-sm font-bold text-white">Urban Technocratic Integration</h5>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        High-demand ICSE/CBSE academies in Mumbai (Bhandup, Kandivali) and Pune (Amanora, Nanded City). Educates the children of senior IAS officers, police commissioners, and corporate titans, embedding lifelong informal bureaucratic immunity.
+                      </p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-dynasty-900 border border-purple-900/60 space-y-2.5">
+                      <span class="text-xs font-mono text-purple-400 font-bold uppercase">VIDYA PRATISHTHAN & RESEARCH</span>
+                      <h5 class="text-sm font-bold text-white">Baramati Knowledge Citadel</h5>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        150-acre world-class campus encompassing Biotechnology, Law, and Engineering. Hosts international diplomats, corporate recruiters, and Union ministers, legitimizing dynastic capital as visionary educational philanthropy.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-xl bg-dynasty-950 border border-slate-800 text-xs text-slate-400">
+                    <strong class="text-rose-400">The Evolutionary Pivot:</strong> Rural vernacular trusts (Rayat Shikshan) secure agrarian masses; urban elite academies secure the secretariat and courts.
+                  </div>
+                </div>
+              </section>
+
+              <!-- SLIDE 6: GEOPOLITICAL CONCLUSION -->
+              <section data-background-gradient="linear-gradient(to bottom right, #090e17, #0d122b, #050713)">
+                <div class="space-y-6">
+                  <div class="flex items-center space-x-2 text-xs font-mono text-indigo-400 uppercase">
+                    <span class="px-2 py-0.5 rounded bg-indigo-950 border border-indigo-800">STRATEGIC SYNTHESIS</span>
+                    <span>•</span>
+                    <span>THE INDISPENSABLE INTERLOCUTOR</span>
+                  </div>
+                  <h2 class="text-3xl font-extrabold text-white font-display">Geopolitical Leverage & Strategic Conclusion</h2>
+                  
+                  <div class="grid grid-cols-3 gap-4 pt-2">
+                    <div class="p-4 rounded-xl bg-dynasty-900 border border-slate-800 space-y-1.5">
+                      <div class="text-xs font-mono text-indigo-400 font-bold">WTO & Trade</div>
+                      <h5 class="text-xs font-bold text-white">Agricultural Balance</h5>
+                      <p class="text-[11px] text-slate-400">
+                        Arbitrated between domestic food subsidies and US market access as Union Agriculture Minister (2004–2014).
+                      </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dynasty-900 border border-slate-800 space-y-1.5">
+                      <div class="text-xs font-mono text-emerald-400 font-bold">Track-II Diplomacy</div>
+                      <h5 class="text-xs font-bold text-white">The Washington Wire</h5>
+                      <p class="text-[11px] text-slate-400">
+                        Declassified US cables show Pawar as a pragmatic, pro-capital interlocutor who delivers consensus across polarized coalitions.
+                      </p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-dynasty-900 border border-slate-800 space-y-1.5">
+                      <div class="text-xs font-mono text-amber-400 font-bold">Dynastic Immunity</div>
+                      <h5 class="text-xs font-bold text-white">The Perpetual State</h5>
+                      <p class="text-[11px] text-slate-400">
+                        Interlocking agrarian, corporate, and educational assets ensure survival despite federal probes and family splits.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="p-5 rounded-xl bg-gradient-to-r from-dynasty-900 via-dynasty-850 to-dynasty-900 border border-indigo-900/60 text-center space-y-2">
+                    <h4 class="text-base font-bold text-white font-display">The Final Verdict</h4>
+                    <p class="text-xs text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                      The Pawar dynasty is not an electoral aberration; it is a meticulously engineered sub-national governing machine—the indispensable mediator between rustic agrarian India and global capital.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Deck Keyboard & Controls Instruction Bar -->
+        <div class="glass-panel p-3 rounded-xl border border-dynasty-border flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2">
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-keyboard text-emerald-400"></i>
+            <span>Keyboard shortcuts: Use <kbd class="px-1.5 py-0.5 rounded bg-dynasty-950 border border-slate-700 text-slate-200 font-mono text-[10px]">Left</kbd> and <kbd class="px-1.5 py-0.5 rounded bg-dynasty-950 border border-slate-700 text-slate-200 font-mono text-[10px]">Right</kbd> arrow keys to navigate slides.</span>
+          </div>
+          <div class="flex items-center space-x-3 font-mono text-[11px]">
+            <span class="text-emerald-400">• Press <kbd class="px-1.5 py-0.5 rounded bg-dynasty-950 border border-slate-700 text-slate-200 font-mono text-[10px]">F</kbd> for Fullscreen</span>
+            <span class="text-slate-500">•</span>
+            <span class="text-slate-400">Reveal.js Embedded Engine</span>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-dynasty-border bg-dynasty-950 py-8 mt-12 text-xs text-slate-500">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center space-x-2">
+          <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+          <span class="font-mono text-slate-400">PORTFOLIO CASE STUDY // INVESTIGATIVE POLITICAL ECONOMY</span>
+        </div>
+        <div class="text-center sm:text-right space-y-0.5">
+          <p class="text-slate-400 font-medium">The Pawar Dynasty: Sugar Politics, Global Corporate Leverage, and Geopolitical Networks</p>
+          <p class="text-[11px]">Academic Reference & Forensic Analysis of Maharashtra's Political Architecture</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Metric Detail Modal -->
+    <div id="metric-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="glass-panel max-w-lg w-full rounded-2xl border border-dynasty-border p-6 space-y-4 shadow-2xl relative">
+        <button onclick="closeMetricModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+          <i class="fa-solid fa-xmark text-base"></i>
+        </button>
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400" id="modal-icon">
+            <i class="fa-solid fa-info"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-white font-display" id="modal-title">Metric Deep Dive</h3>
+            <span class="text-xs font-mono text-emerald-400" id="modal-subtitle">Sub-system Analysis</span>
+          </div>
+        </div>
+        <p class="text-sm text-slate-300 leading-relaxed" id="modal-body">
+          Detailed metrics description...
+        </p>
+        <div class="p-3.5 rounded-xl bg-dynasty-950 border border-slate-800 text-xs text-slate-400" id="modal-footer">
+          Forensic audit data verified from state cooperative reports and corporate filings.
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+      // State Management
+      let currentTab = 'dashboard';
+      let revealDeckInstance = null;
+      let visNetworkInstance = null;
+      let isAudioPlaying = false;
+      let physicsEnabled = true;
+
+      // Audio dispatch simulation
+      function toggleAudioBriefing() {
+        const drawer = document.getElementById('audio-drawer');
+        const icon = document.getElementById('audio-icon');
+        const label = document.getElementById('audio-label');
+        
+        isAudioPlaying = !isAudioPlaying;
+        if (isAudioPlaying) {
+          drawer.classList.remove('hidden');
+          icon.className = 'fa-solid fa-pause text-amber-400';
+          if (label) label.textContent = 'Pause Brief';
+        } else {
+          drawer.classList.add('hidden');
+          icon.className = 'fa-solid fa-volume-high text-emerald-400';
+          if (label) label.textContent = 'Audio Brief';
+        }
+      }
+
+      // Tab Switching Handler
+      function switchTab(tabId) {
+        currentTab = tabId;
+        const tabs = ['dashboard', 'mindmap', 'whitepaper', 'slides'];
+        
+        // Hide all views
+        tabs.forEach(t => {
+          const viewEl = document.getElementById(`view-${t}`);
+          if (viewEl) viewEl.classList.add('hidden');
+
+          // Update desktop buttons
+          const btn = document.getElementById(`tab-btn-${t}`);
+          if (btn) {
+            if (t === tabId) {
+              btn.className = 'nav-tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium text-emerald-400 bg-slate-800/90 border border-emerald-500/30 transition-all flex items-center space-x-2';
+            } else {
+              btn.className = 'nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/50 transition-all flex items-center space-x-2';
+            }
+          }
+
+          // Update mobile buttons
+          const mobBtn = document.getElementById(`mob-tab-btn-${t}`);
+          if (mobBtn) {
+            if (t === tabId) {
+              mobBtn.className = 'whitespace-nowrap px-3 py-1 text-xs font-medium rounded-lg text-emerald-400 bg-slate-800/90 border border-emerald-500/30';
+            } else {
+              mobBtn.className = 'whitespace-nowrap px-3 py-1 text-xs font-medium rounded-lg text-slate-400 hover:bg-slate-800/50';
+            }
+          }
+        });
+
+        // Show selected view
+        const targetView = document.getElementById(`view-${tabId}`);
+        if (targetView) {
+          targetView.classList.remove('hidden');
+        }
+
+        // Specific Initializations
+        if (tabId === 'mindmap') {
+          setTimeout(() => {
+            initVisNetwork();
+            if (visNetworkInstance) {
+              visNetworkInstance.fit();
+            }
+          }, 100);
+        } else if (tabId === 'slides') {
+          setTimeout(() => {
+            initRevealDeck();
+            if (revealDeckInstance) {
+              revealDeckInstance.layout();
+            }
+          }, 100);
+        }
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // AI Summary Accordion Handler
+      function toggleAccordion(id) {
+        const content = document.getElementById(`accordion-content-${id}`);
+        const icon = document.getElementById(`accordion-icon-${id}`);
+        if (!content) return;
+
+        const isHidden = content.classList.contains('hidden');
+        
+        // Close others or toggle this
+        if (isHidden) {
+          content.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        } else {
+          content.classList.add('hidden');
+          if (icon) icon.style.transform = 'rotate(0deg)';
+        }
+      }
+
+      // AI Summary Filter Handler
+      function filterAiSummary(cat) {
+        // Update active pill button
+        const pills = document.querySelectorAll('#ai-pills button');
+        pills.forEach(btn => {
+          btn.className = 'ai-pill px-3 py-1 rounded-lg bg-dynasty-800 text-slate-400 hover:text-slate-200 border border-dynasty-border text-xs';
+        });
+        event.currentTarget.className = 'ai-pill px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-medium text-xs';
+
+        // Filter accordion items
+        const items = document.querySelectorAll('#ai-accordion-container .accordion-item');
+        items.forEach(item => {
+          if (cat === 'all' || item.getAttribute('data-category') === cat) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+
+      // Metric Modal Details
+      const metricDetailsData = {
+        sugar: {
+          title: "Cooperative Sugar Base & DCCB Monopoly",
+          subtitle: "Western Maharashtra Agrarian Monopoly",
+          body: "Spanning 195+ cooperative sugar factories across Western Maharashtra (Baramati, Pune, Sangli, Satara, Kolhapur), this apparatus commands over ₹42,000 crore in annual credit and cane turnover. Control of the harvesting schedules and the Fair and Remunerative Price (FRP) settlements creates an unbreakable voter dependence, where rural cultivators depend on factory chairmen for credit, water, and crop monetization.",
+          icon: "fa-wheat-awn",
+          color: "text-emerald-400"
+        },
+        corporate: {
+          title: "Corporate Aligned Infrastructure Assets ($18.5B+)",
+          subtitle: "MNC Entry Corridors & Conglomerate Alignments",
+          body: "Maharashtra functions as India's primary financial entry point. The corporate nexus encompasses the Amit Jatia / Hardcastle Restaurants alliance (securing McDonald's supply chains through Baramati Agro), and the Adani Group entente (Dighi Port acquisition in Raigad, 1000 MW HVDC power transmission lines, and logistics corridors). This network guarantees corporate operating stability regardless of federal political volatility.",
+          icon: "fa-handshake",
+          color: "text-amber-400"
+        },
+        geopolitical: {
+          title: "Geopolitical & Federal Footprint (4 Decades)",
+          subtitle: "Track-II Diplomacy & Sovereign Trade Interlocution",
+          body: "Four decades of federal governance as Union Defence Minister (1991–1993) and Union Agriculture Minister (2004–2014) positioned Pawar as India's primary interlocutor during WTO Doha agricultural rounds. Leveraged Maharashtra's 14% share of national GDP to mediate between US multinational interests (Enron, General Motors, Boeing) and national political coalitions.",
+          icon: "fa-globe",
+          color: "text-indigo-400"
+        },
+        education: {
+          title: "Elite Institutional Soft Power (140,000+ Students)",
+          subtitle: "From Rural Masses to Bureaucratic Enclaves",
+          body: "A generational transition from grassroots rural trusts (Rayat Shikshan Sanstha) to elite urban ICSE/CBSE networks under the Pawar Public Charitable Trust (Mumbai: Kandivali, Bhandup; Pune: Amanora, Nanded City). These academies educate children of senior IAS officers, IPS commissioners, and corporate titans, embedding lifelong informal bureaucratic loyalty.",
+          icon: "fa-graduation-cap",
+          color: "text-rose-400"
+        }
+      };
+
+      function showMetricDetail(key) {
+        const data = metricDetailsData[key];
+        if (!data) return;
+
+        document.getElementById('modal-title').textContent = data.title;
+        document.getElementById('modal-subtitle').textContent = data.subtitle;
+        document.getElementById('modal-body').textContent = data.body;
+        const iconEl = document.getElementById('modal-icon');
+        iconEl.innerHTML = `<i class="fa-solid ${data.icon} text-lg"></i>`;
+        iconEl.className = `w-10 h-10 rounded-lg bg-slate-900 border border-slate-700 flex items-center justify-center ${data.color}`;
+
+        document.getElementById('metric-modal').classList.remove('hidden');
+      }
+
+      function closeMetricModal() {
+        document.getElementById('metric-modal').classList.add('hidden');
+      }
+
+      // =========================================================================
+      // VIS.JS NETWORK IMPLEMENTATION
+      // =========================================================================
+      const networkNodesData = [
+        // Sector: Sugar / Agrarian (Green)
+        { id: 1, label: "Sugar Cooperatives\n(195+ Mills)", group: "sugar", shape: "dot", size: 28, color: { background: "#10b981", border: "#34d399" } },
+        { id: 2, label: "DCCBs & MSCB\n(Credit Engine)", group: "sugar", shape: "dot", size: 24, color: { background: "#059669", border: "#10b981" } },
+        { id: 3, label: "Rural Vote Bank\n(3.5M Smallholders)", group: "sugar", shape: "dot", size: 22, color: { background: "#047857", border: "#059669" } },
+        { id: 4, label: "Baramati Agro Ltd\n(Processing & Distilleries)", group: "sugar", shape: "dot", size: 25, color: { background: "#10b981", border: "#6ee7b7" } },
+
+        // Sector: State Power (Amber)
+        { id: 5, label: "Maharashtra Assembly\n(Coalition Majority)", group: "state", shape: "dot", size: 26, color: { background: "#f59e0b", border: "#fbbf24" } },
+        { id: 6, label: "Irrigation & Energy\nDepartments", group: "state", shape: "dot", size: 22, color: { background: "#d97706", border: "#f59e0b" } },
+        { id: 7, label: "Union Ministries\n(Agri & Defense)", group: "state", shape: "dot", size: 25, color: { background: "#b45309", border: "#d97706" } },
+
+        // Sector: Corporate / MNC (Cyan)
+        { id: 8, label: "Hardcastle / McDonald's\n(Amit Jatia)", group: "corporate", shape: "dot", size: 26, color: { background: "#06b6d4", border: "#22d3ee" } },
+        { id: 9, label: "Adani Group\n(Dighi Port & Power)", group: "corporate", shape: "dot", size: 27, color: { background: "#0891b2", border: "#06b6d4" } },
+        { id: 10, label: "Lavasa Hill City\n(SEZ Concession)", group: "corporate", shape: "dot", size: 21, color: { background: "#0e7490", border: "#0891b2" } },
+        { id: 11, label: "Cold Chain & Logistics\nEcosystem", group: "corporate", shape: "dot", size: 22, color: { background: "#06b6d4", border: "#67e8f9" } },
+
+        // Sector: Geopolitics & US (Indigo)
+        { id: 12, label: "WTO Negotiations\n(Agri Subsidies)", group: "global", shape: "dot", size: 24, color: { background: "#6366f1", border: "#818cf8" } },
+        { id: 13, label: "US Chamber of Commerce\n& Corporate Corridors", group: "global", shape: "dot", size: 24, color: { background: "#4f46e5", border: "#6366f1" } },
+        { id: 14, label: "Track-II Diplomatic\nBackchannels", group: "global", shape: "dot", size: 22, color: { background: "#4338ca", border: "#4f46e5" } },
+
+        // Sector: Education & Bureaucratic Capture (Rose)
+        { id: 15, label: "Pawar Public School\n(Mumbai & Pune)", group: "education", shape: "dot", size: 26, color: { background: "#f43f5e", border: "#fb7185" } },
+        { id: 16, label: "Vidya Pratishthan\n(Baramati Tech Oasis)", group: "education", shape: "dot", size: 25, color: { background: "#e11d48", border: "#f43f5e" } },
+        { id: 17, label: "Bureaucratic & IAS/IPS\nElite Absorption", group: "education", shape: "dot", size: 24, color: { background: "#be123c", border: "#e11d48" } },
+        { id: 18, label: "Rayat Shikshan Sanstha\n(Vernacular Mass Reach)", group: "education", shape: "dot", size: 23, color: { background: "#9f1239", border: "#be123c" } }
+      ];
+
+      const networkEdgesData = [
+        // Sugar -> Rural votes & Credit
+        { from: 1, to: 2, label: "Advances & Chits", color: { color: "#10b981" } },
+        { from: 2, to: 3, label: "Credit Dependance", color: { color: "#10b981" } },
+        { from: 3, to: 5, label: "Monolithic Turnout", color: { color: "#10b981", highlight: "#34d399" }, arrows: "to" },
+        { from: 1, to: 4, label: "Cane / Agro Byproducts", color: { color: "#10b981" } },
+
+        // State Power Arbitrage
+        { from: 5, to: 6, label: "Policy & Water Allocation", color: { color: "#f59e0b" }, arrows: "to" },
+        { from: 6, to: 1, label: "Irrigation Subsidies", color: { color: "#f59e0b" }, arrows: "to" },
+        { from: 5, to: 7, label: "Federal Coalition Clout", color: { color: "#f59e0b" }, arrows: "to" },
+
+        // Corporate Nexus Links
+        { from: 4, to: 11, label: "Dairy & Agritech Sourcing", color: { color: "#06b6d4" }, arrows: "to" },
+        { from: 11, to: 8, label: "McDonald's Cold Chain", color: { color: "#06b6d4" }, arrows: "to" },
+        { from: 5, to: 8, label: "Urban Store Zoning", color: { color: "#06b6d4" }, arrows: "to" },
+        { from: 5, to: 9, label: "Port & HVDC Approvals", color: { color: "#06b6d4" }, arrows: "to" },
+        { from: 9, to: 1, label: "Industrial Freight Corridors", color: { color: "#06b6d4" }, arrows: "to" },
+        { from: 5, to: 10, label: "Special Planning Authority", color: { color: "#06b6d4" } },
+
+        // Geopolitical Corridor
+        { from: 7, to: 12, label: "Trade Subsidies & Quotas", color: { color: "#6366f1" }, arrows: "to" },
+        { from: 12, to: 13, label: "US Trade Treaties", color: { color: "#6366f1" } },
+        { from: 13, to: 14, label: "Track-II Diplomatic Channels", color: { color: "#6366f1" } },
+        { from: 14, to: 5, label: "Sub-National Stability Guarantee", color: { color: "#6366f1" }, arrows: "to" },
+
+        // Education & Elite Capture
+        { from: 5, to: 15, label: "Prime Urban Trust Land", color: { color: "#f43f5e" }, arrows: "to" },
+        { from: 15, to: 17, label: "IAS/IPS Children Enrollment", color: { color: "#f43f5e" }, arrows: "to" },
+        { from: 17, to: 5, label: "Bureaucratic & Regulatory Immunity", color: { color: "#f43f5e", highlight: "#fb7185" }, arrows: "to" },
+        { from: 4, to: 16, label: "Agritech Incubation Grants", color: { color: "#f43f5e" } },
+        { from: 18, to: 3, label: "Grassroots Mass Literacy Base", color: { color: "#f43f5e" } },
+        { from: 16, to: 13, label: "Diplomatic Academic Delegations", color: { color: "#818cf8" } }
+      ];
+
+      const nodeDossiers = {
+        1: {
+          title: "Sugar Cooperatives (195+ Mills)",
+          subtitle: "Western Maharashtra Agrarian Monopoly",
+          category: "Sugar & Cooperatives",
+          apparatus: "Network of 195+ cooperative mills across Pune, Sangli, Satara, and Kolhapur. Controls sugarcane harvesting schedules, cane transport logistics, and ethanol distillation plants.",
+          mechanism: "Monopolistic cane purchasing agreements. Fair and Remunerative Price (FRP) payments staggered to ensure cultivator compliance during legislative and zilla parishad elections.",
+          downstream: "Channels liquid campaign financing and provides raw agricultural commodities directly to Baramati Agro and cooperative distilleries.",
+          quote: "The cooperative sugar factory is the beating heart of political hegemony in Maharashtra."
+        },
+        2: {
+          title: "DCCBs & MSCB Credit Engine",
+          subtitle: "Sub-National Banking Monopoly",
+          category: "Sugar & Cooperatives",
+          apparatus: "Maharashtra State Cooperative Bank (MSCB) and District Central Cooperative Banks (Pune, Kolhapur, Sangli DCCBs).",
+          mechanism: "Disburses over ₹42,000 crore in seasonal agricultural credit. Crop loans are auto-deducted from sugar mill cane receipts, binding farmers into credit servility.",
+          downstream: "Provides loan guarantees and liquidity to friendly mill chairmen while strangling rebel cooperatives through regulatory audits.",
+          quote: "Control of the cooperative bank guarantees that no rural rival can finance a campaign."
+        },
+        3: {
+          title: "Rural Vote Bank (3.5M Smallholders)",
+          subtitle: "Grassroots Electoral Monolith",
+          category: "Sugar & Cooperatives",
+          apparatus: "Millions of sugarcane farmers and seasonal cane-cutter laborers across the Krishna and Bhima river basins.",
+          mechanism: "Voters depend on the local mill chairman for water lift approvals, diesel chits, and timely harvesting before cane drying sets in.",
+          downstream: "Guarantees high-margin voter turnout for dynastic candidates across 45+ assembly constituencies in Western Maharashtra.",
+          quote: "A monolithic vote bank engineered not through ideology, but through water and harvesting permits."
+        },
+        4: {
+          title: "Baramati Agro Ltd",
+          subtitle: "Private Agro-Industrial Conglomerate",
+          category: "Sugar & Cooperatives",
+          apparatus: "Family-owned agro-industrial enterprise led by Rohit Pawar and dynastic trustees; operates poultry, dairy, feed mills, and ethanol distilleries.",
+          mechanism: "Converts cooperative raw materials into high-margin commercial FMCG contracts, supplying multinational brands and power grids.",
+          downstream: "Direct commercial bridge between rural sugar cooperatives and multinational supply chains like McDonald's (Hardcastle).",
+          quote: "Baramati Agro represents the transition from cooperative political rent-seeking to modern agro-capitalism."
+        },
+        5: {
+          title: "Maharashtra State Assembly",
+          subtitle: "State Executive Legislative Center",
+          category: "State Power",
+          apparatus: "The Maharashtra Cabinet, Mantralaya (Secretariat), and key ministries: Finance, Irrigation, Energy, and Home.",
+          mechanism: "Controls state zoning, Special Planning Authority designations, state bank guarantees for sugar mills, and industrial SEZ clearances.",
+          downstream: "Enables private concessions (Lavasa), corporate clearances (Adani, McDonald's), and educational trust land grants.",
+          quote: "State power was wielded to construct permanent institutions rather than fleeting electoral majorities."
+        },
+        6: {
+          title: "Irrigation & Energy Departments",
+          subtitle: "Infrastructure Resource Monopoly",
+          category: "State Power",
+          apparatus: "Krishna Valley Development Corporation, Nira-Deoghar canal network, and Maharashtra State Electricity Distribution Company (MSEDCL).",
+          mechanism: "Channeling irrigation dam waters preferentially into sugarcane cultivation belts while allocating power feeder subsidies.",
+          downstream: "Directly sustains the high water consumption needs of the 195 sugar mills and allied distilleries.",
+          quote: "In the Deccan plateau, control of water is absolute control of political destiny."
+        },
+        7: {
+          title: "Union Ministries (Agriculture & Defense)",
+          subtitle: "Federal Cabinet Geometry",
+          category: "State Power",
+          apparatus: "Union Ministry of Defence (1991–1993) and Union Ministry of Agriculture, Consumer Affairs & Public Distribution (2004–2014).",
+          mechanism: "Determined national Minimum Support Prices (MSP), grain export bans, WTO negotiating boundaries, and bilateral defense procurement postures.",
+          downstream: "Elevated regional satrap status into indispensable national coalition kingmaker.",
+          quote: "Holding the federal agriculture portfolio gave the dynasty authority over global commodity flows."
+        },
+        8: {
+          title: "Hardcastle / McDonald's (Amit Jatia)",
+          subtitle: "MNC Sourcing & Retail Entente",
+          category: "MNC & Adani",
+          apparatus: "Westlife Foodworld / Hardcastle Restaurants (Master Franchisee for McDonald's South & West India).",
+          mechanism: "Sourced buns, dairy, lettuce, and poultry from Baramati Agro and Western Maharashtra cold chain hubs; secured prime retail approvals across Mumbai and Pune.",
+          downstream: "Proved that multinational corporations could achieve frictionless operational scale through dynastic alignment.",
+          quote: "While McDonald's in North India broke down in litigation, Maharashtra became its most profitable growth corridor."
+        },
+        9: {
+          title: "The Adani Group (Dighi Port & Power)",
+          subtitle: "Strategic Infrastructure Alliance",
+          category: "MNC & Adani",
+          apparatus: "Adani Ports and Special Economic Zone (APSEZ) and Adani Transmission / Electricity Mumbai.",
+          mechanism: "Acquisition and ₹10,000 Cr expansion of Dighi Port in Raigad; 1,000 MW HVDC power line corridors traversing Western Maharashtra.",
+          downstream: "Public political defense of Gautam Adani during federal storms in exchange for long-term regional infrastructure stability.",
+          quote: "Pawar's defense of Adani revealed that economic infrastructure partnerships supersede partisan rhetoric."
+        },
+        10: {
+          title: "Lavasa Hill City Corporation",
+          subtitle: "Private Urban Concession Experiment",
+          category: "MNC & Adani",
+          apparatus: "Hindustan Construction Company (HCC) and private dynastic real estate syndicates.",
+          mechanism: "Creation of unprecedented state 'Hill Station Policy' granting private developer sovereign planning authority over 25,000 acres.",
+          downstream: "Financialized mountain land into luxury tourism and residential assets before debt restructuring.",
+          quote: "Lavasa represented the pinnacle of private infrastructure sovereignty under dynastic sponsorship."
+        },
+        11: {
+          title: "Cold Chain & Logistics Ecosystem",
+          subtitle: "Agrarian Supply Infrastructure",
+          category: "MNC & Adani",
+          apparatus: "Temperature-controlled freight corridors, pre-cooling facilities, and tissue-culture propagation labs across Pune and Baramati.",
+          mechanism: "Provides ISO-certified supply lines fulfilling global multinational standards for retail and export commodities.",
+          downstream: "Connects smallholder farms directly into international consumer supply networks.",
+          quote: "A state-of-the-art logistics corridor that transformed perishable crops into institutional leverage."
+        },
+        12: {
+          title: "WTO Negotiations (Doha Rounds)",
+          subtitle: "International Trade Arbitration",
+          category: "US Geopolitics",
+          apparatus: "World Trade Organization ministerial negotiating teams in Geneva, Cancun, and Hong Kong.",
+          mechanism: "Balanced domestic agricultural subsidy protection (Green & Amber box) with bilateral concessions for US market access.",
+          downstream: "Insulated Indian sugarcane and grain producers while maintaining diplomatic standing with Western trade representatives.",
+          quote: "Pawar held the veto pen on agricultural tariff schedules, making him a central figure in WTO diplomacy."
+        },
+        13: {
+          title: "US Chambers & Corporate Corridors",
+          subtitle: "Bilateral Commercial Diplomacy",
+          category: "US Geopolitics",
+          apparatus: "US-India Business Council (USIBC), American Chamber of Commerce, and Fortune 500 corporate delegations.",
+          mechanism: "Positioned Maharashtra as the preferred destination for US direct investment in aerospace (Boeing), automotive (GM), and technology.",
+          downstream: "Built international diplomatic capital that shielded the state leadership from federal isolation.",
+          quote: "Mumbai's status as India's financial capital was leveraged to cultivate sovereign-level US corporate relationships."
+        },
+        14: {
+          title: "Track-II Diplomatic Channels",
+          subtitle: "Informal Geopolitical Backchannels",
+          category: "US Geopolitics",
+          apparatus: "Declassified US State Department dispatches, consulate briefings in Mumbai, and bilateral delegations.",
+          mechanism: "Pawar was engaged by Western ambassadors as a realistic political pragmatist capable of delivering results when New Delhi stalled.",
+          downstream: "Provided early warning intelligence and strategic mediation during international economic disputes (Enron Dabhol).",
+          quote: "Classified cables describe him as the indispensable realist navigating Indian federal governance."
+        },
+        15: {
+          title: "Pawar Public School (Mumbai & Pune)",
+          subtitle: "Elite Urban Education Enclaves",
+          category: "Elite Education",
+          apparatus: "Pawar Public Charitable Trust (PPCT) campuses in Bhandup, Kandivali, Amanora Park Town, Hadapsar, and Nanded City.",
+          mechanism: "Premier English-medium ICSE/CBSE academies enrolling children of senior IAS officers, IPS commissioners, and corporate titans.",
+          downstream: "Cultivates lifelong informal bureaucratic access, shielding the dynasty against administrative hostility.",
+          quote: "Educating the children of the bureaucracy is the most sophisticated form of state capture."
+        },
+        16: {
+          title: "Vidya Pratishthan (Baramati Oasis)",
+          subtitle: "Higher Education & Technocratic Citadel",
+          category: "Elite Education",
+          apparatus: "150-acre knowledge campus offering Engineering, Biotechnology, Law, and Management degrees.",
+          mechanism: "Hosts international academic symposia, Union ministers, and Fortune 500 campus recruitment drives.",
+          downstream: "Projects enlightened philanthropic legitimacy, countering perceptions of rustic feudal domination.",
+          quote: "Vidya Pratishthan proved that Baramati could produce software engineers as efficiently as sugar crystals."
+        },
+        17: {
+          title: "Bureaucratic & Judicial Elite Absorption",
+          subtitle: "Administrative Shield",
+          category: "Elite Education",
+          apparatus: "Informal networks of Mantralaya secretaries, district collectors, police commissioners, and legal dignitaries.",
+          mechanism: "Trust school admissions, educational trust trustee affiliations, and social capital integration.",
+          downstream: "Ensures slow-walking of adverse regulatory probes, land audits, and enforcement investigations.",
+          quote: "The informal social capital of educational trusts is more potent than formal legislative power."
+        },
+        18: {
+          title: "Rayat Shikshan Sanstha",
+          subtitle: "Historical Vernacular Mass Trust",
+          category: "Elite Education",
+          apparatus: "Founded by Karmaveer Bhaurao Patil (1919); 675+ rural schools and colleges with 450,000+ students across Maharashtra.",
+          mechanism: "Provides low-cost education to rural masses, cementing Sharad Pawar's image as the guardian of Bahujan social reform.",
+          downstream: "Maintains unbreakable moral legitimacy across rural agrarian communities.",
+          quote: "Rayat Shikshan Sanstha provides the moral foundation that sanctifies modern political power."
+        }
+      };
+
+      function initVisNetwork() {
+        if (visNetworkInstance) return;
+
+        const container = document.getElementById('vis-network-canvas');
+        if (!container) return;
+
+        const data = {
+          nodes: new vis.DataSet(networkNodesData),
+          edges: new vis.DataSet(networkEdgesData)
+        };
+
+        const options = {
+          nodes: {
+            font: {
+              face: 'Inter, sans-serif',
+              size: 13,
+              color: '#f8fafc',
+              strokeWidth: 3,
+              strokeColor: '#0b1120'
+            },
+            borderWidth: 2,
+            shadow: {
+              enabled: true,
+              color: 'rgba(0,0,0,0.6)',
+              size: 10,
+              x: 3,
+              y: 3
+            }
+          },
+          edges: {
+            width: 1.8,
+            smooth: {
+              type: 'cubicBezier',
+              forceDirection: 'none',
+              roundness: 0.15
+            },
+            font: {
+              face: 'JetBrains Mono, monospace',
+              size: 10,
+              color: '#94a3b8',
+              strokeWidth: 2,
+              strokeColor: '#090e17'
+            },
+            arrows: {
+              to: { enabled: true, scaleFactor: 0.8 }
+            }
+          },
+          physics: {
+            barnesHut: {
+              gravitationalConstant: -4500,
+              centralGravity: 0.25,
+              springLength: 140,
+              springConstant: 0.04,
+              damping: 0.09
+            },
+            stabilization: { iterations: 150 }
+          },
+          interaction: {
+            hover: true,
+            tooltipDelay: 150,
+            zoomView: true
+          }
+        };
+
+        visNetworkInstance = new vis.Network(container, data, options);
+
+        // Click listener for node inspector
+        visNetworkInstance.on('click', function (params) {
+          if (params.nodes.length > 0) {
+            const nodeId = params.nodes[0];
+            showNodeDossier(nodeId);
+          }
+        });
+      }
+
+      function showNodeDossier(nodeId) {
+        const dossier = nodeDossiers[nodeId];
+        if (!dossier) return;
+
+        document.getElementById('inspect-title').textContent = dossier.title;
+        document.getElementById('inspect-subtitle').textContent = dossier.subtitle;
+        document.getElementById('inspect-category').textContent = dossier.category;
+        document.getElementById('inspect-apparatus').textContent = dossier.apparatus;
+        document.getElementById('inspect-mechanism').textContent = dossier.mechanism;
+        document.getElementById('inspect-downstream').textContent = dossier.downstream;
+        document.getElementById('inspect-quote').textContent = `"${dossier.quote}"`;
+      }
+
+      function filterNetwork(groupKey) {
+        if (!visNetworkInstance) return;
+
+        // Reset filter button styles
+        const btns = ['all', 'sugar', 'state', 'corporate', 'global', 'education'];
+        btns.forEach(b => {
+          const el = document.getElementById(`net-btn-${b}`);
+          if (el) {
+            if (b === groupKey) {
+              el.className = 'px-2.5 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-medium text-xs';
+            } else {
+              el.className = 'px-2.5 py-1.5 rounded-lg bg-dynasty-850 text-slate-400 hover:text-slate-200 border border-slate-800 text-xs';
+            }
+          }
+        });
+
+        // Filter nodes
+        let filteredNodes = networkNodesData;
+        if (groupKey !== 'all') {
+          filteredNodes = networkNodesData.map(node => {
+            const isMatch = node.group === groupKey;
+            return {
+              ...node,
+              hidden: !isMatch
+            };
+          });
+        } else {
+          filteredNodes = networkNodesData.map(node => ({ ...node, hidden: false }));
+        }
+
+        visNetworkInstance.setData({
+          nodes: new vis.DataSet(filteredNodes),
+          edges: new vis.DataSet(networkEdgesData)
+        });
+      }
+
+      function fitNetwork() {
+        if (visNetworkInstance) {
+          visNetworkInstance.fit({ animation: { duration: 600, easingFunction: 'easeInOutQuad' } });
+        }
+      }
+
+      function togglePhysics() {
+        if (!visNetworkInstance) return;
+        physicsEnabled = !physicsEnabled;
+        visNetworkInstance.setOptions({ physics: { enabled: physicsEnabled } });
+        const btn = document.getElementById('btn-physics');
+        if (btn) {
+          btn.innerHTML = `<i class="fa-solid fa-atom"></i> Physics: ${physicsEnabled ? 'On' : 'Off'}`;
+          btn.className = physicsEnabled ? 'p-2 rounded-lg bg-dynasty-800 text-slate-300 hover:text-white border border-slate-700 text-xs' : 'p-2 rounded-lg bg-emerald-950 text-emerald-400 border border-emerald-700 text-xs';
+        }
+      }
+
+      // =========================================================================
+      // REVEAL.JS PRESENTATION DECK IMPLEMENTATION
+      // =========================================================================
+      function initRevealDeck() {
+        if (revealDeckInstance) return;
+
+        const deckEl = document.getElementById('revealDeck');
+        if (!deckEl) return;
+
+        revealDeckInstance = new Reveal(deckEl, {
+          embedded: true,
+          controls: true,
+          progress: true,
+          center: true,
+          hash: false,
+          slideNumber: false,
+          transition: 'convex',
+          backgroundTransition: 'fade',
+          keyboardCondition: 'focused',
+          keyboard: {
+            37: 'prev',
+            39: 'next',
+            70: () => toggleFullscreenDeck()
+          }
+        });
+
+        revealDeckInstance.initialize().then(() => {
+          updateSlideIndicator();
+          revealDeckInstance.layout();
+        });
+
+        revealDeckInstance.on('slidechanged', () => {
+          updateSlideIndicator();
+        });
+      }
+
+      function updateSlideIndicator() {
+        if (!revealDeckInstance) return;
+        const indices = revealDeckInstance.getIndices();
+        const total = revealDeckInstance.getTotalSlides();
+        const current = (indices.h || 0) + 1;
+        const el = document.getElementById('slide-indicator');
+        if (el) {
+          el.textContent = `Slide ${current} / ${total}`;
+        }
+      }
+
+      function prevSlide() {
+        if (revealDeckInstance) revealDeckInstance.prev();
+      }
+
+      function nextSlide() {
+        if (revealDeckInstance) revealDeckInstance.next();
+      }
+
+      function toggleFullscreenDeck() {
+        const container = document.getElementById('reveal-deck-container');
+        if (!container) return;
+
+        if (!document.fullscreenElement) {
+          container.requestFullscreen().then(() => {
+            if (revealDeckInstance) revealDeckInstance.layout();
+          }).catch(err => console.error(err));
+        } else {
+          document.exitFullscreen().then(() => {
+            if (revealDeckInstance) revealDeckInstance.layout();
+          }).catch(err => console.error(err));
+        }
+      }
+
+      // Sticky ToC Active State Tracking on Scroll
+      window.addEventListener('scroll', () => {
+        if (currentTab !== 'whitepaper') return;
+
+        const chapters = ['chapter-1', 'chapter-2', 'chapter-3', 'chapter-4'];
+        const scrollPos = window.scrollY + 200;
+
+        chapters.forEach(id => {
+          const el = document.getElementById(id);
+          const link = document.querySelector(`#whitepaper-toc a[href="#${id}"]`);
+          if (el && link) {
+            const top = el.offsetTop;
+            const height = el.offsetHeight;
+            if (scrollPos >= top && scrollPos < top + height) {
+              link.className = 'toc-link block py-2 px-2.5 rounded-lg text-emerald-400 bg-emerald-950/60 border border-emerald-800/40 transition font-semibold';
+            } else {
+              link.className = 'toc-link block py-2 px-2.5 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-slate-800/40 transition';
+            }
+          }
+        });
+      });
+
+      // Keyboard navigation for whole page
+      document.addEventListener('keydown', (e) => {
+        if (currentTab === 'slides' && revealDeckInstance) {
+          if (e.key === 'ArrowRight' || e.key === 'Space') {
+            revealDeckInstance.next();
+          } else if (e.key === 'ArrowLeft') {
+            revealDeckInstance.prev();
+          }
+        }
+      });
+
+      // Window resize re-layout
+      window.addEventListener('resize', () => {
+        if (currentTab === 'slides' && revealDeckInstance) {
+          revealDeckInstance.layout();
+        }
+        if (currentTab === 'mindmap' && visNetworkInstance) {
+          visNetworkInstance.fit();
+        }
+      });
+    </script>
+  </body>
+</html>
